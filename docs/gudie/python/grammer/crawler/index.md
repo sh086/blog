@@ -1,8 +1,7 @@
+# 爬虫与数据分析
 
+<div>&nbsp</div>
 
-# AI工作流
-
-## GPT副业
 <tr >
        <td  style=" border: 1px transparent;padding-right: 5px;">
               <a href="./技术支持/redbook">
@@ -11,4 +10,16 @@
               </a>
        </td>
 </tr>
+
+
+
+
+
+
+
+https://drissionpage.cn/get_start/installation
+
+https://requests.readthedocs.io/projects/cn/zh-cn/latest
+
+https://www.selenium.dev/zh-cn/documentation/webdriver/getting_started/
 

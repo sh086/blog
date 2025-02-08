@@ -1,10 +1,17 @@
 #通用禁用提交的文件
 node_modules
-.vitepress
 dist
-*.lock
+
 .idea/
+shooter
 logs
 out
 *.iml
 *.log
+.DS_Store
+dist-ssr
+cache
+.cache
+.temp
+*.local
+# yarn.lock
