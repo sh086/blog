@@ -7,7 +7,7 @@ export default defineConfig({
   title: "探索未至之境", // 站点标题
   description: "学习笔记", // 站点描述
   base: '/blog/',
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/blog/favicon.ico" }]],
   cleanUrls:true, // 使用更简洁的Url配置
   lastUpdated: true, // 更新时间启用
   themeConfig: {

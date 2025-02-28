@@ -15,5 +15,3 @@ cache
 .cache
 .temp
 *.local
-package-lock.json
-# yarn.lock
