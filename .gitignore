@@ -2,6 +2,7 @@
 node_modules
 dist
 
+.vscode/
 .idea/
 shooter
 logs
@@ -14,4 +15,5 @@ cache
 .cache
 .temp
 *.local
+package-lock.json
 # yarn.lock
