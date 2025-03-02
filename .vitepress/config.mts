@@ -7,7 +7,20 @@ export default defineConfig({
   title: "探索未至之境", // 站点标题
   description: "学习笔记", // 站点描述
   base: '/blog/',
-  head: [["link", { rel: "icon", href: "/blog/favicon.ico" }]],
+  head: [
+    ["link", { rel: "icon", href: "/blog/favicon.ico" }],
+    [
+      'script',
+       {},
+      `window._hmt = window._hmt || [];
+      (function() { 
+        var hm = document.createElement("script"); 
+        hm.src = "https://hm.baidu.com/hm.js?39514e29553ce2485c0bc9d3a4d580ca";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();`
+    ]
+  ],
   cleanUrls:true, // 使用更简洁的Url配置
   lastUpdated: true, // 更新时间启用
   themeConfig: {

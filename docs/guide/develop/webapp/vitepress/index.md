@@ -2,7 +2,7 @@
 
 
 
-> [官网](https://vitepress.dev/zh/) | [视频教程](https://www.bilibili.com/video/BV1dfkvYBE4p/?spm_id_from=333.1387.collection.video_card.click)
+> [官网](https://vitepress.dev/zh/) | [视频教程](https://www.bilibili.com/video/BV1dfkvYBE4p/?spm_id_from=333.1387.collection.video_card.click) | [默认主题](https://vitepress.dev/zh/reference/default-theme-config)
 
 
 
@@ -12,7 +12,7 @@
 >
 > [Node.js](https://nodejs.org/) 必须是`18`及以上版本
 
-​	　先新建`vitepress`文件夹，并在终端中运行`npm add -D vitepress`将VitePress 安装到当前目录。接着，运行`npx vitepress init`启动安装向导，所有选项**直接按回车选择默认的配置**。
+​	　新建`vitepress`文件夹，并在终端中运行`npm add -D vitepress`将VitePress 安装到当前目录。接着，运行`npx vitepress init`启动安装向导，所有选项**直接按回车选择默认的配置**。
 
 ```
 ┌  Welcome to VitePress!
@@ -48,8 +48,8 @@
 ├─ api-examples.md
 ├─ markdown-examples.md
 └─ index.md              # 主页
-└─ package.json
-说明：配置文件后缀可能是 .mts 或 .js 或 .mjs
+└─ package.json 
+说明：配置文件后缀可能是 .mts 或 .js 或 .mjs 或 .ts
 ```
 
 ​	　最后，执行命令 `npm run docs:dev`启动项目，在终端即可看到站点的本地访问地址。
@@ -62,11 +62,9 @@
 
 
 
-## 配置
+## 站点
 
-### 默认主题
-
-（1）站点信息
+### 元数据
 
 ```js{2-3,5}
 export default defineConfig({
@@ -80,9 +78,9 @@ export default defineConfig({
 
 
 
-（2）网站logo与图标
+### 网站logo与图标
 
-​	　在`.vitepress`同级目录下新增`public`目录，然后将`/favicon.ico`放到`public`目录中后，新增如下配置即可生效。若未能生效可清除`Cookie` 或 重启浏览器 再次尝试。
+​	　在`.vitepress`同级目录下新增`public`目录，然后将`/favicon.ico`放到`public`目录中后，新增如下配置即可生效。若未能生效可清除`Cookie` 或 重启浏览器 再次尝试。另外，`logo`的配置同理。
 
 ```js{3,5}
 export default defineConfig({
@@ -95,7 +93,76 @@ export default defineConfig({
 
 
 
-（3）社交链接
+### 使用更简洁的URL
+
+​	　当设置为 `true` 时，VitePress 将从 URL 中删除 `.html` 后缀。
+
+```js{4-8}
+export default {
+  cleanUrls:true, // 使用更简洁的Url配置
+}
+// 配置前:/markdown-examples.html
+// 配置后:/markdown-examples
+```
+
+
+
+## 默认主题
+
+
+
+### 目录索引
+
+```js{3-4}
+export default {
+  themeConfig: {
+    outlineTitle: "目录", // 定义索引的标题名称
+    outline: [2,6], // 定义索引的标题级别
+  }
+}
+```
+
+
+
+### 上下页链接
+
+```js{4-7}
+export default {
+  themeConfig: {
+    // 上下页链接
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    }
+  }
+}
+```
+
+
+
+### 最后更新时间戳
+
+​	　新增如下配置，即可在文章的末尾展示更新时间。注意，需有Git提交记录才能生效。
+
+```js{3-9,12}
+export default defineConfig({
+    // 自定义上次更新的文本和日期格式
+    lastUpdated: {
+      text: '更新时间',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    }
+  },
+   // 启用配置
+  lastUpdated: true 
+})
+```
+
+
+
+### 社交链接
 
 ```js{4-8}
 export default defineConfig({
@@ -112,83 +179,7 @@ export default defineConfig({
 
 
 
-（4）目录索引
-
-```js{3-4}
-export default {
-  themeConfig: {
-    outlineTitle: "目录", // 定义索引的标题名称
-    outline: [2,6], // 定义索引的标题级别
-  }
-}
-```
-
-
-
-（5）上下页链接
-
-```js{4-7}
-export default {
-  themeConfig: {
-    // 上下页链接
-    docFooter: {
-      prev: '上一页',
-      next: '下一页'
-    }
-  }
-}
-```
-
-
-
-（6）最后更新时间时间戳
-
-​	　新增如下配置，即可在文章的末尾展示更新时间。注意，需有Git提交记录才能生效。
-
-```js{3-9,12}
-export default defineConfig({
-    // 允许自定义上次更新的文本和日期格式 需提交Git后生效
-    lastUpdated: {
-      text: '更新时间',
-      formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
-      }
-    }
-  },
-   // 是否使用 Git 获取每个页面的最后更新时间戳
-  lastUpdated: true 
-})
-```
-
-
-
-（7）MarkDown扩展
-
-```js
-export default {
-  markdown: {
-    lineNumbers: true, // 是否显示行号
-    // 将自定义容器里面的提示信息变成中文
-    // https://vitepress.dev/zh/guide/markdown#custom-containers
-    container:{
-      tipLabel:"提示",
-      warningLabel:"警告",
-      dangerLabel:"危险",
-      infoLabel:"信息",
-      detailsLabel:"详细信息",
-    },
-    image: {
-      // 默认禁用；设置为 true 可为所有图片启用懒加载。
-      lazyLoading: true
-    }
-  },
-}
-```
-
-
-
-（8）搜索
+### 搜索
 
 ```js
 export default {
@@ -220,7 +211,7 @@ export default {
 
 
 
-（9）页脚配置
+### 页脚
 
 ​	　仅当页面不包含侧边栏时才会显示页脚，一般只能在主页显示。
 
@@ -237,12 +228,12 @@ export default {
 
 
 
-（10）移动端中文化
+### 汉化配置
 
 ```js{4-8}
 export default {
   themeConfig: {
-    // 以下配置仅用于移动端按钮中文化。
+    // 以下配置仅用于移动端按钮中文化
     sidebarMenuLabel:"菜单",
     returnToTopLabel: "返回顶部",
     darkModeSwitchLabel: "深色模式",
@@ -254,23 +245,7 @@ export default {
 
 
 
-（11）使用更简洁的Url配置
-
-​	　当设置为 `true` 时，VitePress 将从 URL 中删除 `.html` 后缀。
-
-```js{4-8}
-export default {
-  cleanUrls:true, // 使用更简洁的Url配置
-}
-// 配置前:/markdown-examples.html
-// 配置后:/markdown-examples
-```
-
-
-
-
-
-​	　至此，常用的默认主题配置都已配置完成，完整的详情参见[这里](https://vitepress.dev/zh/reference/default-theme-config)。
+## 写作
 
 ### 导航栏
 
@@ -354,11 +329,40 @@ export default {
 }
 ```
 
-​	　注意，自动配置sidebar是**不能配置`srcDir: './docs'`的**，且**脚本生成的访问路径和文件层级是一样的**。
+​	　特别注意，自动配置`sidebar`**脚本生成的 访问路径 和 文件层级 是一样的**，所以，是**不能配置`srcDir: './docs'`的**。
 
 
 
-### 部署
+### MarkDown
+
+（1）简单的MarkDown配置
+
+```js
+export default {
+  markdown: {
+    lineNumbers: true, // 是否显示行号
+    // 将自定义容器里面的提示信息变成中文
+    // https://vitepress.dev/zh/guide/markdown#custom-containers
+    container:{
+      tipLabel:"提示",
+      warningLabel:"警告",
+      dangerLabel:"危险",
+      infoLabel:"信息",
+      detailsLabel:"详细信息",
+    },
+    image: {
+      // 默认禁用；设置为 true 可为所有图片启用懒加载。
+      lazyLoading: true
+    }
+  },
+}
+```
+
+
+
+## 部署
+
+### GitHub Pages
 
 ​	　在项目的 `.github/workflows` 目录中创建一个名为 `deploy.yml` 的文件，其中包含这样的内容：
 
@@ -433,24 +437,26 @@ jobs:
 
 ​	　这里特别需要注意`第53行`，我这里没有配送`srcDir: './docs/'`这个属性的，如果你有配置，这里需要改成`path: docs/.vitepress/dist`才行。
 
-​	　然后，在`config.mts`配置文件中配置`base`路径。
+​	　然后，在`config.mts`配置文件中配置`base`路径 以及 站点图标链接前加上仓库名。
 
 ```
 export default defineConfig({
   // 这里配置的是仓库名
   base: '/vitepress/',
+   // 站点图标链接前加上仓库名
+  head: [["link", { rel: "icon", href: "/vitepress/favicon.ico" }]],
 })
 ```
 
-​	　然后在仓库的`Settings`选择`Build and deployment` > `Source` > `GitHub Actions`，并将更改推送到 `main` 分支并等待 `GitHub Action` 工作流完成。
+​	　接着，在仓库的`Settings`选择`Build and deployment` > `Source` > `GitHub Actions`，并将更改推送到 `main` 分支并等待 `GitHub Action` 工作流完成。
 
 ​	　注意，如果使用的是`npm install`安装的依赖，还需上传`package-lock.json`；如果使用的是`yarn install`安装的依赖，则还需上传`yarn.lock`文件。
 
-​	　等部署完成后，即可在 `https://<username>.github.io/[repository]/` 看到你的博客。你的站点将在每次推送到 `main` 分支时自动部署。
+​	　等自动部署完成后，即可在 `https://<username>.github.io/[repository]/` 看到你的博客。而且你的站点将在每次推送到 `main` 分支时自动部署。
 
-## 自定义主题
+## 自定义
 
-### 视频
+### 嵌入视频样式
 
 ​	　首先，新建`.vitepress/theme/index.js`**主题入口文件**来启用自定义主题。然后，在同一目录下再新建`.vitepress/theme/Layout.vue`来开发自定义主题。文件目录如下：
 
@@ -486,7 +492,7 @@ export default {
 }
 ```
 
-​	　接着，在`Layout.vue`组件中将默认主题导出，并修改**嵌入视频的样式** 、**表格宽度自适应** 以及 **Markdown图片居中**等效果。
+​	　接着，在`Layout.vue`组件中将默认主题导入，并修改**嵌入视频的样式** 、**表格宽度自适应** 以及 **Markdown图片居中**等效果。
 
 ```vue
 <script setup lang="ts">
@@ -534,14 +540,22 @@ const {Layout} = DefaultTheme
 
 ![image-20250227172015861](.\images\image-20250227172015861.png)
 
+### 接入百度统计
 
-### 评论
+​	　访问[百度统计](https://tongji.baidu.com/web5/10000673844/welcome/login)并登录，点击 `进入产品` -> `新增网站`，按要求填写后，即可在 `代码管理` - > `代码获取` 中获得所需的统计代码，然后将其复制并粘贴到您要跟踪的每个网页中。
 
 
 
-### 统计
+
+
+### 第三方评论
+
+
+
+### 文章信息统计
 
   // "@giscus/vue": "^3.0.0",
 
   // "sass-embedded": "^1.81.0",
 
+### 团队页
