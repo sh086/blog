@@ -241,6 +241,114 @@ export default {
 
 
 
+## 部署
+
+### GitHub Pages
+
+​	　在项目的 `.github/workflows` 目录中创建一个名为 `deploy.yml` 的文件，其中包含这样的内容：
+
+```yml{53}
+# 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
+#
+name: Deploy VitePress site to Pages
+
+on:
+  # 在针对 `main` 分支的推送上运行。如果你
+  # 使用 `master` 分支作为默认分支，请将其更改为 `master`
+  push:
+    branches: [main]
+
+  # 允许你从 Actions 选项卡手动运行此工作流程
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许同时进行一次部署，跳过正在运行和最新队列之间的运行队列
+# 但是，不要取消正在进行的运行，因为我们希望允许这些生产部署完成
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # 构建工作
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
+      # - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
+      #   with:
+      #     version: 9
+      # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm # 或 pnpm / yarn
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Install dependencies
+        run: npm ci # 或 pnpm install / yarn install / bun install
+      - name: Build with VitePress
+        run: npm run docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .vitepress/dist
+
+  # 部署工作
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+​	　这里特别需要注意`第53行`，我这里没有配送`srcDir: './docs/'`这个属性的，如果你有配置，这里需要改成`path: docs/.vitepress/dist`才行。
+
+​	　然后，在`config.mts`配置文件中配置`base`路径 以及 站点图标链接前加上仓库名。
+
+```
+export default defineConfig({
+  // 这里配置的是仓库名
+  base: '/vitepress/',
+   // 站点图标链接前加上仓库名
+  head: [["link", { rel: "icon", href: "/vitepress/favicon.ico" }]],
+})
+```
+
+​	　接着，在仓库的`Settings`选择`Build and deployment` > `Pages` > `Source` > `GitHub Actions`，并将更改推送到 `main` 分支并等待 `GitHub Action` 工作流完成。
+
+​	　注意，如果使用的是`npm install`安装的依赖，还需上传`package-lock.json`；如果使用的是`yarn install`安装的依赖，则还需上传`yarn.lock`文件。
+
+​	　等自动部署完成后，即可在 `https://<username>.github.io/[repository]/` 看到你的博客。而且你的站点将在每次推送到 `main` 分支时自动部署。
+
+
+
+### SEO优化
+
+
+
+https://blog.csdn.net/weixin_45732455/article/details/129975128
+
+https://juejin.cn/post/7409865546197893171#heading-21
+
+
+
+
+
 ## 写作
 
 ### 导航栏
@@ -356,9 +464,110 @@ export default {
 
 ### frontmatter
 
+文章归类
+
+## 在MarkDown使用Vue
+
+### 五彩纸屑
+
+​	　我们以实现在**主页展示五彩纸屑**这个功能来讲述如何在在`MarkDown`使用`Vue`，点击[这里](https://www.kirilv.com/canvas-confetti/)预览效果。首先，需要安装一下插件。
+
+```shell
+npm install canvas-confetti
+```
+
+（1）实现方式一：直接开发
+
+​	　在`index.md`文章尾部直接使用即可，然后重启项目，刷新首页即可看到效果啦。
+
+```vue
+<!-- 添加到md文章末尾 -->
+<script setup lang="ts">
+    import confetti from "canvas-confetti";
+    import { inBrowser } from "vitepress";
+    if (inBrowser) {
+      /* 纸屑 */
+      confetti({
+        particleCount: 100,
+        spread: 170,
+        origin: { y: 0.6 },
+      });
+    }
+</script>
+```
+
+（2）实现方式二：导入组件
+
+​	　新建`.vitepress/theme/confetti.vue`，具体内容如下：
+
+```vue
+<!-- .vitepress/theme/confetti.vue -->
+<script setup lang="ts">
+import confetti from "canvas-confetti";
+import { inBrowser } from "vitepress";
+
+if (inBrowser) {
+  /* 纸屑 */
+  /* 可以在下面的网站选择其他的效果，只需更换一下这里的代码即可 */
+  /* https://www.kirilv.com/canvas-confetti/ */
+  confetti({
+    particleCount: 100,
+    spread: 170,
+    origin: { y: 0.6 },
+  });
+}
+</script>
+<!-- 这种方法必须要template，否则报错 -->
+<template></template>
+```
+
+​	　在`index.md`中先导入`confetti`组件，然后在md文章末尾使用即可。
+
+```vue
+<script setup lang="ts">
+    import confetti from ".vitepress/theme/confetti.vue";
+</script>
+
+<!-- 添加到md文章末尾 -->
+<confetti/>
+```
+
+（3）实现方式三：全局导入
+
+​	　在`.vitepress/theme/index.ts`注入该 Vue 组件。
+
+```js
+import confetti from "./confetti.vue";
+
+export default {
+  Layout,
+  enhanceApp: ({router,app}) =>{
+    // 注册五彩纸屑插件
+    app.component("confetti", confetti);
+  }
+}
+```
+
+​	　在`index.md`文章尾部直接使用即可，然后重启项目，刷新首页即可看到效果啦。
+
+```vue
+<script setup lang="ts">
+    import confetti from "canvas-confetti";
+    import { inBrowser } from "vitepress";
+    if (inBrowser) {
+      /* 纸屑 */
+      confetti({
+        particleCount: 100,
+        spread: 170,
+        origin: { y: 0.6 },
+      });
+    }
+</script>
+```
 
 
-## 自定义
+
+
 
 ### 嵌入视频样式
 
@@ -490,107 +699,6 @@ export default {
 
 ​	　配置完成后，刷新页面，点击任意一个图片，即可看到效果。
 
-### 更改搜索位置
-
-### 在MarkDown使用Vue
-
-​	　我们以实现在**主页展示五彩纸屑**这个功能来讲述如何在在`MarkDown`使用`Vue`，点击[这里](https://www.kirilv.com/canvas-confetti/)预览效果。首先，需要安装一下插件。
-
-```shell
-npm install canvas-confetti
-```
-
-（1）实现方式一：直接开发
-
-​	　在`index.md`文章尾部直接使用即可，然后重启项目，刷新首页即可看到效果啦。
-
-```vue
-<!-- 添加到md文章末尾 -->
-<script setup lang="ts">
-    import confetti from "canvas-confetti";
-    import { inBrowser } from "vitepress";
-    if (inBrowser) {
-      /* 纸屑 */
-      confetti({
-        particleCount: 100,
-        spread: 170,
-        origin: { y: 0.6 },
-      });
-    }
-</script>
-```
-
-（2）实现方式二：导入组件
-
-​	　新建`.vitepress/theme/confetti.vue`，具体内容如下：
-
-```vue
-<!-- .vitepress/theme/confetti.vue -->
-<script setup lang="ts">
-import confetti from "canvas-confetti";
-import { inBrowser } from "vitepress";
-
-if (inBrowser) {
-  /* 纸屑 */
-  /* 可以在下面的网站选择其他的效果，只需更换一下这里的代码即可 */
-  /* https://www.kirilv.com/canvas-confetti/ */
-  confetti({
-    particleCount: 100,
-    spread: 170,
-    origin: { y: 0.6 },
-  });
-}
-</script>
-<!-- 这种方法必须要template，否则报错 -->
-<template></template>
-```
-
-​	　在`index.md`中先导入`confetti`组件，然后在md文章末尾使用即可。
-
-```vue
-<script setup lang="ts">
-    import confetti from ".vitepress/theme/confetti.vue";
-</script>
-
-<!-- 添加到md文章末尾 -->
-<confetti/>
-```
-
-（3）实现方式三：全局导入
-
-​	　在`.vitepress/theme/index.ts`注入该 Vue 组件。
-
-```js
-import confetti from "./confetti.vue";
-
-export default {
-  Layout,
-  enhanceApp: ({router,app}) =>{
-    // 注册五彩纸屑插件
-    app.component("confetti", confetti);
-  }
-}
-```
-
-​	　在`index.md`文章尾部直接使用即可，然后重启项目，刷新首页即可看到效果啦。
-
-```vue
-<script setup lang="ts">
-    import confetti from "canvas-confetti";
-    import { inBrowser } from "vitepress";
-    if (inBrowser) {
-      /* 纸屑 */
-      confetti({
-        particleCount: 100,
-        spread: 170,
-        origin: { y: 0.6 },
-      });
-    }
-</script>
-```
-
-
-
 
 
 ### 百度统计文章浏览量
@@ -642,10 +750,6 @@ export default {
 ​	　配置完成后，即可在实时访客页面看到对应的统计信息。PS:这里统计结果的显示是有延迟的。
 
 ![image-20250302153246683](./images/image-20250302153246683.png)
-
-
-
-### 文章归类
 
 
 
@@ -718,7 +822,7 @@ watch(isDark, (dark) => {
             theme="preferred_color_scheme"
             lang="zh-CN"
             crossorigin="anonymous"
-            Loading = 'lazy'/>
+            />
       </div>
     </template>
   </Layout>
@@ -788,107 +892,3 @@ import NotFound from './NotFound.vue'
 ```
 
 
-
-## 部署
-
-### GitHub Pages
-
-​	　在项目的 `.github/workflows` 目录中创建一个名为 `deploy.yml` 的文件，其中包含这样的内容：
-
-```yml{53}
-# 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
-#
-name: Deploy VitePress site to Pages
-
-on:
-  # 在针对 `main` 分支的推送上运行。如果你
-  # 使用 `master` 分支作为默认分支，请将其更改为 `master`
-  push:
-    branches: [main]
-
-  # 允许你从 Actions 选项卡手动运行此工作流程
-  workflow_dispatch:
-
-# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# 只允许同时进行一次部署，跳过正在运行和最新队列之间的运行队列
-# 但是，不要取消正在进行的运行，因为我们希望允许这些生产部署完成
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
-jobs:
-  # 构建工作
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
-      # - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
-      #   with:
-      #     version: 9
-      # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm # 或 pnpm / yarn
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Install dependencies
-        run: npm ci # 或 pnpm install / yarn install / bun install
-      - name: Build with VitePress
-        run: npm run docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .vitepress/dist
-
-  # 部署工作
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-```
-
-​	　这里特别需要注意`第53行`，我这里没有配送`srcDir: './docs/'`这个属性的，如果你有配置，这里需要改成`path: docs/.vitepress/dist`才行。
-
-​	　然后，在`config.mts`配置文件中配置`base`路径 以及 站点图标链接前加上仓库名。
-
-```
-export default defineConfig({
-  // 这里配置的是仓库名
-  base: '/vitepress/',
-   // 站点图标链接前加上仓库名
-  head: [["link", { rel: "icon", href: "/vitepress/favicon.ico" }]],
-})
-```
-
-​	　接着，在仓库的`Settings`选择`Build and deployment` > `Source` > `GitHub Actions`，并将更改推送到 `main` 分支并等待 `GitHub Action` 工作流完成。
-
-​	　注意，如果使用的是`npm install`安装的依赖，还需上传`package-lock.json`；如果使用的是`yarn install`安装的依赖，则还需上传`yarn.lock`文件。
-
-​	　等自动部署完成后，即可在 `https://<username>.github.io/[repository]/` 看到你的博客。而且你的站点将在每次推送到 `main` 分支时自动部署。
-
-
-
-### SEO优化
-
-
-
-https://blog.csdn.net/weixin_45732455/article/details/129975128
-
-https://juejin.cn/post/7409865546197893171#heading-21

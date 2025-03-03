@@ -14,6 +14,6 @@
 
 
 
-[vitepress](./webapp/vitepress/使用vitepress搭建在线博客)
+[vitepress](./webapp/vitepress/)
 
 ## Java

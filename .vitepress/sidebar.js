@@ -1,4 +1,8 @@
+import  {vitepress} from './sidebar/webapp.js'
+
 export default {
+  '/docs/guide/develop/webapp/vitepress/':vitepress,
+
   '/docs/workflow/': [
     {
       text: '指南',
