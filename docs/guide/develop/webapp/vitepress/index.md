@@ -99,7 +99,7 @@ npx vitepress init
 
 :::
 
-​	　注意，要确保最新的 `package.json` 包含 `"type": "module"`，这个配置是为了告诉 `Node.js` 使用 ECMAScript Modules (ESM) 语法来处理 .js 文件，而不是使用 CommonJS 模块系统，避免后面安装插件报错。
+​	　注意，要确保最新的 `package.json` 包含 `"type": "module"`，这个配置是为了告诉 `Node.js` 使用 `ECMAScript Modules` (`ESM`) 语法来处理 `.js` 文件，而不是使用 `CommonJS` 模块系统，避免后面安装插件报错。
 
 ​	　最后，执行命令 `npm run dev`启动项目，在终端即可看到站点的本地访问地址。
 

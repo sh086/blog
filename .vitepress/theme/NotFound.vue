@@ -14,4 +14,3 @@ onMounted(() => {
   document.getElementById('404-container')?.appendChild(script)
 })
 </script>
-  

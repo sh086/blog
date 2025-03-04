@@ -1,9 +1,6 @@
-# README
 
 
-
-
-
+<!-- 添加到md文章末尾 -->
 <script setup lang="ts">
     import confetti from "canvas-confetti";
     import { inBrowser } from "vitepress";
