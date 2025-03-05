@@ -11,7 +11,7 @@ const vitepress =  [
     ]
   },
   {
-    text: '写作',
+    text: '进阶',
     collapsed: false, 
     items: [
       { text: '路由', link: base + '/vitepress/03_路由'},
@@ -23,9 +23,8 @@ const vitepress =  [
     collapsed: false, 
     items: [
       { text: '自定义主题', link: base + '/vitepress/05_自定义主题'},
-      { text: '访问统计', link: base + '/vitepress/06_访问统计'},
-      { text: 'Giscus评论', link: base +'/vitepress/07_Giscus评论'},
-      { text: '公益404页面', link: base + '/vitepress/08_公益404页面'},
+      { text: '第三方插件', link: base + '/vitepress/06_第三方插件'},
+      { text: '访问统计', link: base + '/vitepress/07_访问统计'},
     ]
   },
 ]

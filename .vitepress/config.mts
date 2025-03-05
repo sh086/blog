@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
 import nav from "./nav"
 import sidebar from "./sidebar"
+import container from 'markdown-it-container';
+import { renderSandbox } from 'vitepress-plugin-sandpack';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -110,6 +112,19 @@ export default defineConfig({
     image: {
       // 默认禁用；设置为 true 可为所有图片启用懒加载。
       lazyLoading: true
-    }
+    },
+    config(md) {
+      md.use(container, 'sandbox', {
+          render (tokens, idx) {
+            return renderSandbox(tokens, idx, 'sandbox');
+          },
+        });
+      // ArticleMetadata组件插入h1标题下
+      md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
+          let htmlResult = slf.renderToken(tokens, idx, options);
+          if (tokens[idx].tag === 'h1') htmlResult += `<ArticleMetadata />`; 
+          return htmlResult;
+      }
+    },
   },
 })
