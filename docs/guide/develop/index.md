@@ -15,7 +15,7 @@
   <Linkcard 
   url="./webapp/vitepress/" 
   title="Vitepress"  
-  logo="https://vitepress.yiov.top/logo.png"
+  logo="/blog/icon/vitepress.png"
   />
 
 ## Java

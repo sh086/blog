@@ -294,7 +294,7 @@ The count is: {{ count }}
 
 ```md [单页面导入]
 <script setup lang="ts">
-    import ShowModal from ".vitepress/theme/ShowModal.vue";
+    import ShowModal from ".vitepress/components/theme/ShowModal.vue";
 </script>
 
 <!-- 添加到md文章末尾 -->
