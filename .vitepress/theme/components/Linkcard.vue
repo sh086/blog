@@ -3,8 +3,8 @@ interface Props {
     url: string
     title: string
     logo: string
-    description: string
-    type: string // 默认：normal 可选 normal、full
+    description?: string
+    type?: string // 默认：normal 可选 normal、full
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -80,6 +80,11 @@ const props = withDefaults(defineProps<Props>(), {
     margin: 0;
     text-align: center;
     transition: color 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100%; 
+    width: 100%;
 }
 
 /* 卡片背景 */
@@ -103,7 +108,7 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 /* 描述链接文字 */
-.description {
+.linkcard_large .description {
     flex: 1;
     font-weight: 500;
     font-size: 16px;
@@ -114,7 +119,7 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 /* 描述链接文字2 */
-.description span {
+.linkcard_large .description span {
     font-size: 14px;
 }
 

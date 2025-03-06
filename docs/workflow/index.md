@@ -1,1 +1,12 @@
-# 一人公司方法论
+# 工作流
+
+
+
+  <Linkcard 
+  url="./deepseek/" 
+  title="DeepSeek"  
+  logo="/blog/icon/deepseek.png"
+  />
+
+
+

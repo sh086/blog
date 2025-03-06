@@ -127,7 +127,9 @@ export default defineConfig({
       // ArticleMetadata组件插入h1标题下
       md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
           let htmlResult = slf.renderToken(tokens, idx, options);
-          if (tokens[idx].tag === 'h1') htmlResult += `<ArticleMetadata />`; 
+          if (tokens[idx].tag === 'h1' && !env.path.includes('index.md')) {
+            htmlResult += `<ArticleMetadata />`; 
+          }
           return htmlResult;
       }
     },
