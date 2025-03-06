@@ -5,11 +5,16 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "nprogress-v2": "^1.1.10",
+    "vitepress": "^1.6.3",
+    "vitepress-markdown-timeline": "^1.2.2",
+    "vitepress-plugin-sandpack": "^1.1.4",
+    "xgplayer": "^3.0.21"
   },
   "dependencies": {
     "@giscus/vue": "^3.1.1",
     "canvas-confetti": "^1.9.3",
     "medium-zoom": "^1.1.0"
-  }
+  },
+  "type": "module"
 }

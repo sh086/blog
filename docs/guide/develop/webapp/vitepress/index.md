@@ -2,7 +2,7 @@
 
 ​	　VitePress 是一个静态站点生成器，专为构建快速、以内容为中心的站点而设计。可以获取用 Markdown 编写的内容，对其应用主题，并生成可以轻松部署到任何地方的静态 HTML 页面。
 
-> [官网](https://vitepress.dev/zh/) | [视频教程](https://www.bilibili.com/video/BV1dfkvYBE4p/?spm_id_from=333.1387.collection.video_card.click) 
+> [官网](https://vitepress.dev/zh/) | [视频教程](https://www.bilibili.com/video/BV1dfkvYBE4p/?spm_id_from=333.1387.collection.video_card.click)  | [参考](https://vitepress.yiov.top/getting-started.html)
 
 
 
@@ -82,7 +82,6 @@ npx vitepress init
 ```js [package.json]
 {
   "scripts": {
-  "docs:dev": "vitepress dev docs",
     "docs:dev": "vitepress dev docs",// [!code --]
     "docs:build": "vitepress build docs",// [!code --]
     "docs:preview": "vitepress preview docs"// [!code --]
@@ -120,7 +119,9 @@ npx vitepress init
 npm add -D vitepress
 # 第二步：根据package.json安装项目所需依赖
 npm install
-# 第三步：启动项目
+# 第三步：启动项目(具体请看package.json中的scripts配置命令)
 npm run dev
 ```
+
+
 
