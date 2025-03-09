@@ -1,6 +1,9 @@
+::: timeline 2023-04-24
 
-* Title <Badge type="info" text="default" /> 
-* Title <Badge type="tip" text="^1.9.0" />
-* Title <Badge type="warning" text="beta" /> 
-* Title <Badge type="danger" text="caution" />
-* Title <Badge type="info">custom element</Badge>
+
+![善意的竞争](https://static.iyf.tv/upload/video/202502091621242131386.gif?w=216&h=309&format=jpg&mode=stretch)
+
+:::
+
+::: timeline 2023-04-23
+:::
