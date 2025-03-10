@@ -127,11 +127,9 @@ aside: false
   logo="/blog/icon/k8s.png"
   />
 
-
-
 ### 数据库运维
 
-  <Linkcard 
+<Linkcard 
   url="" 
   title="MySQL"  
   logo="/blog/icon/mysql.png"
@@ -156,5 +154,3 @@ aside: false
   title="Python"  
   logo="/blog/icon/python.png"
   />
-
-### 大数据分析

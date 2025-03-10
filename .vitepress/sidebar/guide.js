@@ -1,4 +1,3 @@
-const base = '/docs/guide/develop/webapp';
 const guideIndex =  [
   {
     text: '指南',
@@ -25,7 +24,6 @@ const guideIndex =  [
       { text: 'DevOps流水线', link: '/docs/guide/#devops流水线'},
       { text: '数据库运维', link: '/docs/guide/#数据库运维'},
       { text: 'Python与自动化', link: '/docs/guide/#python与自动化'},
-      { text: '大数据分析', link: ''},
     ]
   },
   // {

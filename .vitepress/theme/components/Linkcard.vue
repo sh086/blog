@@ -3,16 +3,26 @@ interface Props {
     url: string
     title: string
     logo: string
-    description?: string
+    target?: string // 默认：_blank 可选 normal、full
     type?: string // 默认：normal 可选 normal、full
+    description?: string
+    description2?: string
+    description3?: string
+    description4?: string
+    description5?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
     url: '',
     title: '',
-    description: '',
     logo: '',
+    target: '_self',
     type: 'normal',
+    description: '',
+    description2: '',
+    description3: '',
+    description4: '',
+    description5: '',
 })
 </script>
 
@@ -27,12 +37,22 @@ const props = withDefaults(defineProps<Props>(), {
     </div>
 
     <div v-if="props.type === 'full'" style="margin-top: 24px" class="linkcard_large">
-        <a :href="props.url">
-            <p class="description">{{ props.title }}<br><span>{{ props.description }}</span></p>
-            <div class="logo">
-                <img alt="logo" width="70px" height="70px" :src="props.logo" />
+        <span>
+            <p class="description">
+                 <b>{{ props.title }}</b><br>
+                 <span v-if="props.description">{{ props.description }}<br/></span>
+                 <span v-if="props.description2">{{ props.description2 }}<br/></span>
+                 <span v-if="props.description3">{{ props.description3 }}<br/></span>
+                 <span v-if="props.description4">{{ props.description4 }}<br/></span>
+                 <span v-if="props.description5">{{ props.description5 }}<br/></span>
+            </p>
+            <div v-if="props.logo" class="logo">
+                <a v-if="props.url" :href="props.url" :target="props.target">
+                    <img alt="logo" width="70px" height="70px" :src="props.logo" />
+                </a>
+                <img v-else="props.url" alt="img" style="width: 120px;cursor: zoom-in" :src="props.logo" />
             </div>
-        </a>
+        </span>
     </div>
 </template>
 
@@ -102,7 +122,7 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 /* 链接样式 */
-.linkcard_large a {
+.linkcard_large span {
     display: flex;
     align-items: center;
 }
@@ -132,6 +152,9 @@ const props = withDefaults(defineProps<Props>(), {
 .logo img {
     width: 80px;
     object-fit: contain;
-    cursor: default; 
+    /* 鼠标放到图片上展示手形 */
+    cursor: pointer; 
+     /* 鼠标放到图片上展示放大镜 */
+    /* cursor:  zoom-in */
 }
 </style>

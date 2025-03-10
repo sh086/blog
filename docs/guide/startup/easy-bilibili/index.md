@@ -1,1 +1,1 @@
-# Easy Bilibili
+# Easy Bilibili - 仿B站项目
