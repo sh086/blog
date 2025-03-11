@@ -85,6 +85,8 @@ aside: false
   logo="/blog/icon/springboot.png"
   />
 
+
+
 ### 微服务架构
 
   <Linkcard 
@@ -93,20 +95,32 @@ aside: false
   logo="/blog/icon/springcloud.png"
   />
 
-## 平台
+  <Linkcard 
+  url="" 
+  title="ZooKeeper"  
+  logo="/blog/icon/zookeeper.png"
+  />
+
+ <Linkcard 
+  url="" 
+  title="KafKa"  
+  logo="/blog/icon/kafka.png"
+  />
+
+## 云服务
 
 ### DevOps流水线
+
+<Linkcard 
+  url="./devops/debug/" 
+  title="DevOps"  
+  logo="/blog/icon/devops.png"
+  />  
 
 <Linkcard 
   url="./devops/jenkins/" 
   title="Jenkins"  
   logo="/blog/icon/jenkins.png"
-  />
-
- <Linkcard 
-  url="./devops/docker/" 
-  title="Docker"  
-  logo="/blog/icon/docker.png"
   />
 
  <Linkcard 
@@ -121,17 +135,25 @@ aside: false
   logo="/blog/icon/github.png"
   />
 
+------
+
+ <Linkcard 
+  url="./devops/docker/" 
+  title="Docker"  
+  logo="/blog/icon/docker.png"
+  />
+
  <Linkcard 
   url="" 
   title="K8S"  
   logo="/blog/icon/k8s.png"
   />
 
+### 平台即服务
 
+**数据库：**
 
-### 数据库运维
-
-  <Linkcard 
+<Linkcard 
   url="" 
   title="MySQL"  
   logo="/blog/icon/mysql.png"
@@ -149,6 +171,14 @@ aside: false
   logo="/blog/icon/mongodb.png"
   />
 
+**中间件：**
+
+  <Linkcard 
+  url="" 
+  title="Nginx"  
+  logo="/blog/icon/nginx.png"
+  />
+
 ### Python与自动化
 
   <Linkcard 
@@ -156,5 +186,3 @@ aside: false
   title="Python"  
   logo="/blog/icon/python.png"
   />
-
-### 大数据分析

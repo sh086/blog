@@ -1,8 +1,8 @@
-# 快速开始
+# 使用VitePress搭建在线博客
 
 ​	　VitePress 是一个静态站点生成器，专为构建快速、以内容为中心的站点而设计。可以获取用 Markdown 编写的内容，对其应用主题，并生成可以轻松部署到任何地方的静态 HTML 页面。
 
-> [官网](https://vitepress.dev/zh/) | [视频教程](https://www.bilibili.com/video/BV1dfkvYBE4p/?spm_id_from=333.1387.collection.video_card.click)  | [参考](https://vitepress.yiov.top/getting-started.html)
+> [官网](https://vitepress.dev/zh/) | [视频教程](https://www.bilibili.com/video/BV1dfkvYBE4p/?spm_id_from=333.1387.collection.video_card.click)  | [参考文档](https://vitepress.yiov.top/getting-started.html)
 
 
 
