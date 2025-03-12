@@ -37,7 +37,7 @@
 
 ::: timeline 2025-03-07
 <Linkcard 
-  url="./docs/guide/webapp/vitepress/" 
+  url="/blog/docs/guide/webapp/vitepress/" 
   title="[文档]使用VitePress搭建在线博客" 
   description=" 使用Markdown 编写文档并将其部署到GitHub Page站点" 
   logo="/blog/icon/vitepress.png"

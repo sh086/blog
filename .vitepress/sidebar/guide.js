@@ -26,13 +26,6 @@ const guideIndex =  [
       { text: 'Python与自动化', link: '/docs/guide/#python与自动化'},
     ]
   },
-  // {
-  //   text: '模型',
-  //   collapsed: false,
-  //   items: [
-  //     { text: 'NPL自然语言模型', link: ''},
-  //   ]
-  // },
   {
     text: '拓展',
     collapsed: true,
@@ -73,25 +66,5 @@ const vitepress =  [
   },
 ]
 
-const debug =  [
-  {
-    text: 'DeBug日志',
-    collapsed: false,
-    items: [
-      { text: '最新', link: '/docs/guide/devops/debug/'},
-    ]
-  },
-]
 
-
-const easyBiliBili =  [
-  {
-    text: 'Easy-BiliBili',
-    collapsed: false,
-    items: [
-      { text: '快速开始', link: '/docs/guide/startup/easy-bilibili/'},
-    ]
-  },
-]
-
-export {easyBiliBili,vitepress,debug,guideIndex}
+export {vitepress}

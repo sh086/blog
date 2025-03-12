@@ -1,45 +1,34 @@
----
-aside: false
----
 # 互联网全栈工程师
 
 ## 快速开始
 
 <Linkcard 
   url="./devops/debug/" 
-  title="DevOps"  
+  title="第一课：从Hello Word一镜到底"  
+  type="full"
   logo="/blog/icon/devops.png"
   />  
 
- <Linkcard 
-  url="./devops/debug/" 
-  title="DeBug"  
-  logo="/blog/icon/debug.png"
-  />  
 
- <Linkcard 
-  url="./devops/tools/" 
-  title="Tools"  
-  logo="/blog/icon/tools.png"
-  />  
-
-------
-
- <Linkcard 
-  url="./startup/easy-bilibili/" 
-  title="Easy-BiliBili"  
-  logo="/blog/icon/easy-bilibili.png"
-  />
 
 ## 面试宝典
-
+<Linkcard 
+  url="" 
+  title="DeBug"  
+  logo="/blog/icon/debug.png"
+  />
+<Linkcard 
+  url="" 
+  title="Tools"  
+  logo="/blog/icon/tools.png"
+  />
  <Linkcard 
   url="" 
   title="LeetCode"  
   logo="/blog/icon/leetcode.png"
   />
 
-## 开发
+## 知识点
 
 ### 产品与运营
 
@@ -107,15 +96,9 @@ aside: false
   logo="/blog/icon/kafka.png"
   />
 
-## 云服务
+
 
 ### DevOps流水线
-
-<Linkcard 
-  url="./devops/debug/" 
-  title="DevOps"  
-  logo="/blog/icon/devops.png"
-  />  
 
 <Linkcard 
   url="./devops/jenkins/" 
@@ -135,8 +118,6 @@ aside: false
   logo="/blog/icon/github.png"
   />
 
-------
-
  <Linkcard 
   url="./devops/docker/" 
   title="Docker"  
@@ -148,10 +129,6 @@ aside: false
   title="K8S"  
   logo="/blog/icon/k8s.png"
   />
-
-### 平台即服务
-
-**数据库：**
 
 <Linkcard 
   url="" 
@@ -171,8 +148,6 @@ aside: false
   logo="/blog/icon/mongodb.png"
   />
 
-**中间件：**
-
   <Linkcard 
   url="" 
   title="Nginx"  
@@ -186,3 +161,14 @@ aside: false
   title="Python"  
   logo="/blog/icon/python.png"
   />
+
+
+
+## 项目
+
+  <Linkcard 
+  url="" 
+  title="easy-bilibili"  
+  logo="/blog/icon/easy-bilibili.png"
+  />
+

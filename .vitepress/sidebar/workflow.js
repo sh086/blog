@@ -1,16 +1,3 @@
-const workflowIndex =  [
-  {
-    text: '指南',
-    collapsed: false,
-    items: [
-      { text: '快速开始', link: '/docs/workflow/'},
-      { text: '大模型', link: '/docs/workflow/#大模型'},
-      { text: '平台', link: '/docs/workflow/#平台'},
-    ]
-  },
-]
-
-
 const deepseek =  [
   {
     text: 'DeepSeek',
@@ -39,4 +26,4 @@ const deepseek =  [
   // },
 ]
 
-export {deepseek,workflowIndex}
+export {deepseek}
