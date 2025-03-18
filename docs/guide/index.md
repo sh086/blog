@@ -1,65 +1,51 @@
----
-aside: false
----
 # 互联网全栈工程师
 
 ## 快速开始
 
 <Linkcard 
-  url="./devops/debug/" 
-  title="DevOps"  
+  url="" 
+  title="HelloWord"  
+  description="Hello Word一镜到底"
   logo="/blog/icon/devops.png"
   />  
 
- <Linkcard 
-  url="./devops/debug/" 
+<Linkcard 
+  url="" 
+  title="组件"  
+  logo="/blog/icon/api.png"
+  />
+
+<Linkcard 
+  url="" 
   title="DeBug"  
   logo="/blog/icon/debug.png"
-  />  
-
- <Linkcard 
-  url="./devops/tools/" 
-  title="Tools"  
-  logo="/blog/icon/tools.png"
-  />  
-
-------
-
- <Linkcard 
-  url="./startup/easy-bilibili/" 
-  title="Easy-BiliBili"  
-  logo="/blog/icon/easy-bilibili.png"
   />
 
-## 面试宝典
-
- <Linkcard 
+  <Linkcard 
   url="" 
-  title="LeetCode"  
-  logo="/blog/icon/leetcode.png"
+  title="Python"  
+  logo="/blog/icon/python.png"
   />
 
-## 开发
+## 技术栈
 
-### 产品与运营
-
-### 大前端
+### 大前端开发
 
  <Linkcard 
-  url="" 
+  url="./webapp/vuejs/" 
   title="Vuejs"  
   logo="/blog/icon/vue.png"
   />
 
   <Linkcard 
   url="" 
-  title="MongoDB"  
+  title="IOS开发"  
   logo="/blog/icon/apple.png"
   />
 
   <Linkcard 
   url="" 
-  title="WeChat"  
+  title="微信小程序"  
   logo="/blog/icon/wechat.png"
   />
 
@@ -85,8 +71,6 @@ aside: false
   logo="/blog/icon/springboot.png"
   />
 
-
-
 ### 微服务架构
 
   <Linkcard 
@@ -95,27 +79,9 @@ aside: false
   logo="/blog/icon/springcloud.png"
   />
 
-  <Linkcard 
-  url="" 
-  title="ZooKeeper"  
-  logo="/blog/icon/zookeeper.png"
-  />
-
- <Linkcard 
-  url="" 
-  title="KafKa"  
-  logo="/blog/icon/kafka.png"
-  />
-
 ## 云服务
 
 ### DevOps流水线
-
-<Linkcard 
-  url="./devops/debug/" 
-  title="DevOps"  
-  logo="/blog/icon/devops.png"
-  />  
 
 <Linkcard 
   url="./devops/jenkins/" 
@@ -135,8 +101,6 @@ aside: false
   logo="/blog/icon/github.png"
   />
 
-------
-
  <Linkcard 
   url="./devops/docker/" 
   title="Docker"  
@@ -149,9 +113,7 @@ aside: false
   logo="/blog/icon/k8s.png"
   />
 
-### 平台即服务
-
-**数据库：**
+### 数据库运维
 
 <Linkcard 
   url="" 
@@ -171,7 +133,7 @@ aside: false
   logo="/blog/icon/mongodb.png"
   />
 
-**中间件：**
+### 中间件
 
   <Linkcard 
   url="" 
@@ -179,10 +141,35 @@ aside: false
   logo="/blog/icon/nginx.png"
   />
 
-### Python与自动化
-
   <Linkcard 
   url="" 
-  title="Python"  
-  logo="/blog/icon/python.png"
+  title="ZooKeeper"  
+  logo="/blog/icon/zookeeper.png"
   />
+
+ <Linkcard 
+  url="" 
+  title="KafKa"  
+  logo="/blog/icon/kafka.png"
+  />
+
+## 面试宝典
+
+ <Linkcard 
+  url="" 
+  title="LeetCode"  
+  logo="/blog/icon/leetcode.png"
+  />
+
+<Linkcard 
+  url="" 
+  title="Easy-Bilibili"  
+  logo="/blog/icon/easy-bilibili.png"
+  /> 
+
+<Linkcard 
+  url="" 
+  title="统一认证中心"  
+  description="从统一认证中心开始"
+  logo="/blog/icon/login.png"
+  /> 

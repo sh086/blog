@@ -4,6 +4,6 @@ export default [
   {text: '工作流', link: '/docs/workflow/'},
   {text: '量化', link: '/docs/quant/'},
   // {text: '创业', link: '/docs/project/'},
-  {text: '我的', link: '/docs/shooter/'},
+  {text: '工具', link: '/docs/tools/'},
   // {text: '智能家居', link: ''},
 ] 

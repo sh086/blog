@@ -1,13 +1,11 @@
-import  {vitepress,debug,easyBiliBili,guideIndex} from './sidebar/guide.js'
-import  {deepseek,workflowIndex} from './sidebar/workflow.js'
+import  {vitepress,vuejs} from './sidebar/guide.js'
+import  {deepseek,xiaohongshu} from './sidebar/workflow.js'
 
 export default {
+  // 以下是webapp中的
   '/docs/guide/webapp/vitepress/':vitepress,
-  '/docs/guide/startup/easy-bilibili/':easyBiliBili,
-  '/docs/guide/devops/debug/':debug,
-  '/docs/guide/':guideIndex,
+  '/docs/guide/webapp/vuejs/':vuejs,
 
-  '/docs/workflow/deepseek/':deepseek,
-  '/docs/workflow/':workflowIndex,
-  
+  '/docs/workflow/uploader/deepseek/':deepseek,
+  '/docs/workflow/media/小红书/':xiaohongshu,
 }

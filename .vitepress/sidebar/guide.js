@@ -1,48 +1,3 @@
-const guideIndex =  [
-  {
-    text: '指南',
-    collapsed: false,
-    items: [
-      { text: '快速开始', link: '/docs/guide/'},
-      { text: '面试宝典', link: '/docs/guide/#面试宝典'},
-    ]
-  },
-  {
-    text: '项目组',
-    collapsed: false,
-    items: [
-      { text: '产品与运营', link: '/docs/guide/#产品与运营'},
-      { text: '大前端', link: '/docs/guide/#大前端'},
-      { text: '单体应用', link: '/docs/guide/#单体应用'},
-      { text: '微服务架构', link: '/docs/guide/#微服务架构'},
-    ]
-  },
-  {
-    text: '云服务',
-    collapsed: false,
-    items: [
-      { text: 'DevOps流水线', link: '/docs/guide/#devops流水线'},
-      { text: '平台即服务', link: '/docs/guide/#平台即服务'},
-      { text: 'Python与自动化', link: '/docs/guide/#python与自动化'},
-    ]
-  },
-  // {
-  //   text: '模型',
-  //   collapsed: false,
-  //   items: [
-  //     { text: 'NPL自然语言模型', link: ''},
-  //   ]
-  // },
-  {
-    text: '拓展',
-    collapsed: true,
-    items: [
-      { text: '游戏编程', link: ''},
-      { text: 'Alot物联网', link: ''},
-    ]
-  },
-]
-
 const vitepress =  [
   {
     text: 'VitePress',
@@ -73,25 +28,16 @@ const vitepress =  [
   },
 ]
 
-const debug =  [
+const vuejs =  [
   {
-    text: 'DeBug日志',
+    text: 'VueJS渐进式框架',
     collapsed: false,
     items: [
-      { text: '最新', link: '/docs/guide/devops/debug/'},
+      { text: '快速开始', link: '/docs/guide/webapp/vuejs/'},
+      { text: '语法', link: '/docs/guide/webapp/vuejs/grammer.md'},
     ]
   },
 ]
 
 
-const easyBiliBili =  [
-  {
-    text: 'Easy-BiliBili',
-    collapsed: false,
-    items: [
-      { text: '快速开始', link: '/docs/guide/startup/easy-bilibili/'},
-    ]
-  },
-]
-
-export {easyBiliBili,vitepress,debug,guideIndex}
+export {vitepress,vuejs}

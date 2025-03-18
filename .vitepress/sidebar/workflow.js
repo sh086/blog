@@ -1,42 +1,57 @@
-const workflowIndex =  [
-  {
-    text: '指南',
-    collapsed: false,
-    items: [
-      { text: '快速开始', link: '/docs/workflow/'},
-      { text: '大模型', link: '/docs/workflow/#大模型'},
-      { text: '平台', link: '/docs/workflow/#平台'},
-    ]
-  },
-]
-
-
 const deepseek =  [
   {
     text: 'DeepSeek',
     collapsed: false,
     items: [
-      { text: '快速开始', link: '/docs/workflow/deepseek/'},
-      // { text: '从0到100搭建工作流', link: ''},
-      // { text: '如何学习人工智能', link: ''},
+      { text: '快速开始', link: '/docs/workflow/uploader/deepseek/'},
+      { text: '本地部署', link: ''},
     ]
   },
-  // {
-  //   text: '应用',
-  //   collapsed: false, 
-  //   items: [
-  //     { text: '小红书图文', link: ''},
-  //     { text: '漫改经济学', link: ''},
-  //     { text: '都市仙游记', link: ''},
-  //     { text: '梦想打印机', link: ''},
-  //   ]
-  // },
-  // {
-  //   text: '技术支持',
-  //   collapsed: true, 
-  //   items: [
-  //   ]
-  // },
+  {
+    text: '实用集成',
+    collapsed: false, 
+    items: [
+      { text: '多媒体应用', link: ''},
+      { text: '第三方平台接入', link: ''},
+      { text: '热点新闻分析', link: ''},
+    ]
+  },
+  {
+    text: '自定义',
+    collapsed: false, 
+    items: [
+      { text: '文娱砖家', link: ''},
+      { text: '一品架构师', link: ''},
+      { text: '西虹市第二富', link: ''},
+    ]
+  },
 ]
 
-export {deepseek,workflowIndex}
+const xiaohongshu =  [
+  {
+    text: '小红书',
+    collapsed: false,
+    items: [
+      { text: '快速开始', link: '/docs/workflow/media/小红书/'},
+      { text: '从0到1000粉起号', link: ''},
+    ]
+  },
+  {
+    text: '运营',
+    collapsed: false, 
+    items: [
+      { text: '如何获得流量', link: ''},
+      { text: '商单变现', link: ''},
+    ]
+  },
+  {
+    text: '自动化',
+    collapsed: false, 
+    items: [
+      { text: '自动化发布', link: ''},
+      { text: '数据看板', link: ''},
+    ]
+  },
+]
+
+export {deepseek,xiaohongshu}
