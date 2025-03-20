@@ -15,16 +15,18 @@
   logo="/blog/icon/api.png"
   />
 
-<Linkcard 
-  url="" 
-  title="DeBug"  
-  logo="/blog/icon/debug.png"
+  <Linkcard 
+  url="./startup/workplace/" 
+  title="工作台"  
+  logo="/blog/icon/tools.png"
   />
 
-  <Linkcard 
+## 面试宝典
+
+ <Linkcard 
   url="" 
-  title="Python"  
-  logo="/blog/icon/python.png"
+  title="LeetCode"  
+  logo="/blog/icon/leetcode.png"
   />
 
 ## 技术栈
@@ -133,7 +135,7 @@
   logo="/blog/icon/mongodb.png"
   />
 
-### 中间件
+### 应用中间件
 
   <Linkcard 
   url="" 
@@ -153,13 +155,9 @@
   logo="/blog/icon/kafka.png"
   />
 
-## 面试宝典
 
- <Linkcard 
-  url="" 
-  title="LeetCode"  
-  logo="/blog/icon/leetcode.png"
-  />
+
+## 项目经验
 
 <Linkcard 
   url="" 

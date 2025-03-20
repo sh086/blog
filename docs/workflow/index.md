@@ -3,6 +3,12 @@
 ## 创作者中心
 
   <Linkcard 
+  url="" 
+  title="Python"  
+  logo="/blog/icon/python.png"
+  />
+
+  <Linkcard 
   url="./uploader/deepseek/" 
   title="DeepSeek"  
   logo="/blog/icon/deepseek.png"

@@ -42,8 +42,8 @@ export default defineConfig({
 
     // 社交链接
     socialLinks: [
-      { icon: 'xiaohongshu', link: 'https://www.xiaohongshu.com/user/profile/63fb3ba70000000010028dda' },
       { icon: 'bilibili', link: 'https://space.bilibili.com/393064787' },
+      { icon: 'xiaohongshu', link: 'https://www.xiaohongshu.com/user/profile/63fb3ba70000000010028dda' },
       { icon: 'youtube', link: 'https://www.youtube.com/@suhe086' },
       { icon: 'github', link: 'https://github.com/sh086' },
     ],
