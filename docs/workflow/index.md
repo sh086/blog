@@ -9,15 +9,9 @@
   />
 
   <Linkcard 
-  url="./uploader/deepseek/" 
-  title="DeepSeek"  
+  url="./uploader/" 
+  title="创作者助手"  
   logo="/blog/icon/deepseek.png"
-  />
-
-  <Linkcard 
-  url="" 
-  title="ChatGPT"  
-  logo="/blog/icon/chatgpt.png"
   />
 
 ## 新媒体
@@ -48,14 +42,6 @@
   logo="/blog/icon/视频号.png"
   />
 
-### 内容创作
-
- <Linkcard 
-  url="" 
-  title="漫画经济学"  
-  logo="/blog/icon/money.png"
-  />
-
 ### 技术支持
 
   <Linkcard 
@@ -65,5 +51,3 @@
   />
 
 ## 独立开发
-
-### 产品设计

@@ -1,4 +1,4 @@
-const deepseek =  [
+const uploader =  [
   {
     text: 'DeepSeek',
     collapsed: false,
@@ -54,4 +54,4 @@ const xiaohongshu =  [
   },
 ]
 
-export {deepseek,xiaohongshu}
+export {uploader,xiaohongshu}

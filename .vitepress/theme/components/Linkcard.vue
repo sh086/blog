@@ -40,17 +40,24 @@ const props = withDefaults(defineProps<Props>(), {
         <span>
             <p class="description">
                  <b>{{ props.title }}</b><br>
-                 <span v-if="props.description">{{ props.description }}<br/></span>
+                 <span v-if="props.description" v-html="props.description"></span>
                  <span v-if="props.description2">{{ props.description2 }}<br/></span>
                  <span v-if="props.description3">{{ props.description3 }}<br/></span>
                  <span v-if="props.description4">{{ props.description4 }}<br/></span>
                  <span v-if="props.description5">{{ props.description5 }}<br/></span>
             </p>
             <div v-if="props.logo" class="logo">
-                <a v-if="props.url" :href="props.url" :target="props.target">
-                    <img alt="logo" width="70px" height="70px" :src="props.logo" />
-                </a>
-                <img v-else="props.url" alt="img" style="width: 120px;cursor: zoom-in" :src="props.logo" />
+                <div v-if="props.url" class="logo">
+                    <a v-if="props.url" :href="props.url" :target="props.target">
+                        <img v-if="props.description5" alt="logo" style="width: 130px" :src="props.logo" />
+                        <img v-else-if="props.description3" alt="logo" style="width: 100px" :src="props.logo" />
+                        <img v-else="props.description" alt="logo" width="70px" height="70px" :src="props.logo" />
+                     </a>
+                </div>
+
+                <div v-else="!props.url" class="logo">
+                    <img alt="img" style="width: 120px;cursor: zoom-in" :src="props.logo" />
+                </div>
             </div>
         </span>
     </div>
