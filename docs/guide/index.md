@@ -11,23 +11,20 @@
 
 <Linkcard 
   url="" 
-  title="组件"  
+  title="Common"
   logo="/blog/icon/api.png"
-  />
-
-  <Linkcard 
-  url="./startup/workplace/" 
-  title="工作台"  
-  logo="/blog/icon/tools.png"
-  />
-
-## 面试宝典
-
- <Linkcard 
+  />  
+<Linkcard 
   url="" 
-  title="LeetCode"  
-  logo="/blog/icon/leetcode.png"
-  />
+  title="Debug"
+  logo="/blog/icon/debug.png"
+  />  
+
+<Linkcard 
+  url="" 
+  title="Tools"
+  logo="/blog/icon/tools.png"
+  />  
 
 ## 技术栈
 
@@ -155,9 +152,17 @@
   logo="/blog/icon/kafka.png"
   />
 
+## 面试宝典
 
+### 算法与设计模式
 
-## 项目经验
+ <Linkcard 
+  url="" 
+  title="LeetCode"  
+  logo="/blog/icon/leetcode.png"
+  />
+
+### 项目经验
 
 <Linkcard 
   url="" 

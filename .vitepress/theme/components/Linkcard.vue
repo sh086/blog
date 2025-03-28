@@ -49,8 +49,8 @@ const props = withDefaults(defineProps<Props>(), {
             <div v-if="props.logo" class="logo">
                 <div v-if="props.url" class="logo">
                     <a v-if="props.url" :href="props.url" :target="props.target">
-                        <img v-if="props.description5" alt="logo" style="width: 130px" :src="props.logo" />
-                        <img v-else-if="props.description3" alt="logo" style="width: 100px" :src="props.logo" />
+                        <img v-if="props.description5" alt="logo" style="width: 100px" :src="props.logo" />
+                        <!-- <img v-else-if="props.description3" alt="logo" style="width: 100px" :src="props.logo" /> -->
                         <img v-else="props.description" alt="logo" width="70px" height="70px" :src="props.logo" />
                      </a>
                 </div>

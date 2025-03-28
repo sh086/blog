@@ -4,7 +4,7 @@
 
   <Linkcard 
   url="" 
-  title="买买提"  
-  logo="/blog/icon/gold.png"
+  title="Python"  
+  logo="/blog/icon/python.png"
   />
 
