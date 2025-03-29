@@ -3,28 +3,24 @@
 ## 快速开始
 
 <Linkcard 
-  url="" 
-  title="HelloWord"  
-  description="Hello Word一镜到底"
+  url="./startup/" 
+  title="StartUp"
   logo="/blog/icon/devops.png"
   />  
 
 <Linkcard 
-  url="" 
-  title="Common"
-  logo="/blog/icon/api.png"
-  />  
-<Linkcard 
-  url="" 
-  title="Debug"
-  logo="/blog/icon/debug.png"
+  url="./interview/" 
+  title="面试宝典"  
+  logo="/blog/icon/google.png"
   />  
 
-<Linkcard 
-  url="" 
-  title="Tools"
-  logo="/blog/icon/tools.png"
-  />  
+  <Linkcard 
+  url="./python/" 
+  title="Python"  
+  logo="/blog/icon/python.png"
+  />
+
+
 
 ## 技术栈
 
@@ -44,7 +40,7 @@
 
   <Linkcard 
   url="" 
-  title="微信小程序"  
+  title="微信开发"  
   logo="/blog/icon/wechat.png"
   />
 
@@ -70,13 +66,27 @@
   logo="/blog/icon/springboot.png"
   />
 
-### 微服务架构
+<Linkcard 
+  url="" 
+  title="MyBatis-Plus"  
+  logo="/blog/icon/mybatisplus.png"
+  />
+
+### 微服务与云原生
 
   <Linkcard 
   url="" 
   title="SpringCloud"  
   logo="/blog/icon/springcloud.png"
   />
+
+  <Linkcard 
+  url="" 
+  title="GoLang"  
+  logo="/blog/icon/golang.png"
+  />
+
+### 大数据分析
 
 ## 云服务
 
@@ -152,27 +162,4 @@
   logo="/blog/icon/kafka.png"
   />
 
-## 面试宝典
-
-### 算法与设计模式
-
- <Linkcard 
-  url="" 
-  title="LeetCode"  
-  logo="/blog/icon/leetcode.png"
-  />
-
-### 项目经验
-
-<Linkcard 
-  url="" 
-  title="Easy-Bilibili"  
-  logo="/blog/icon/easy-bilibili.png"
-  /> 
-
-<Linkcard 
-  url="" 
-  title="统一认证中心"  
-  description="从统一认证中心开始"
-  logo="/blog/icon/login.png"
-  /> 
+## 项目经验
