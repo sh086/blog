@@ -9,41 +9,56 @@
 ------
 
 
+::: timeline 2025-03-31
+<Linkcard 
+  url="./2025/20250331_Java日志框架" 
+  title="[文档]Slf4j日志框架的使用" 
+  description="由浅入深全面精讲多种日志框架（log4j、slf4j、logback、jul、juc、springboot）"
+  logo="/blog/icon/vitepress.png"
+  type="full"
+  /> 
+:::
+
+
+::: timeline 2025-03-30
+
+<Linkcard 
+  url="https://www.youtube.com/watch?v=yBDCYkXYhws" 
+  title="[电影] “骗骗”喜欢你 [2024年] [豆瓣评分 6.4]" 
+  description="类型: 喜剧 / 爱情"
+  description2="演职表 ：[苏彪] [杨玉婷] [金晨/孙阳/李雪琴/王皓/王耀庆]"
+  description3="更多信息：中国大陆 | 汉语普通话 | 114分钟"
+  description4="剧情简介: 高级打工仔的外卖员限时体验券"
+  description5="推荐指数：❤❤"
+  type="full"
+  target="_black"
+  logo="https://image11.m1905.cn/uploadfile/2025/0105/20250105104145943991.jpg"
+  /> 
+
+:::
+
 
 ::: timeline 2025-03-29
 <Linkcard 
-  url="/blog/docs/topic/2025/20250328_使用FastExcel实现Excel文档工具类" 
-  title="[文档]史上最全Java工具类" 
-  description="包含常见的开源工具类库，如：guava、hutool以及自定义封装的工具类"
+  url="./2025/20250329_使用Lombok神级插件简化代码" 
+  title="[文档]使用Lombok神级插件简化代码" 
+  description="速通Lombok所有使用技巧和底层原理"
   logo="/blog/icon/vitepress.png"
   type="full"
   /> 
 :::
-
-
-
-::: timeline 2025-03-28
-<Linkcard 
-  url="/blog/docs/topic/2025/20250328_使用Apache POI操作MS文档" 
-  title="[文档]使用Apache POI操作MS文档" 
-  description="使用Apache POI操作MS文档，如Excel、Word、PPT等"
-  logo="/blog/icon/vitepress.png"
-  type="full"
-  /> 
-:::
-
 
 
 ::: timeline 2025-03-24
 
 <Linkcard 
   url="https://www.youtube.com/watch?v=CKz1HH1EiRU" 
-  title="[电影] 逆行人生 [2024年] [豆瓣评分 6.6]" 
-  description="类型: 剧情"
-  description2="导演 ：徐峥"
-  description3="主演：徐峥 / 辛芷蕾 / 王骁 / 贾冰 / 冯兵"
-  description4="推荐指数：❤❤"
-  description5="描述: 高级打工仔的外卖员限时体验券"
+  title="[电影] 逆行人生 [2024年-普通话] [豆瓣评分 6.6]" 
+  description="类型:  剧情"
+  description2="演职表 ：[徐峥] [何可可 / 徐峥] [徐峥 / 辛芷蕾 / 王骁 / 贾冰 / 冯兵]"
+  description3="更多信息：中国大陆 | 汉语普通话 | 121分钟"
+  description4="剧情简介: 高级打工仔的外卖员限时体验券"
+  description5="推荐指数：❤❤"
   type="full"
   target="_black"
   logo="https://static.yfsp.tv/upload/video/202409301535133575374.gif?w=216&h=309&format=jpg&mode=stretch"
@@ -103,11 +118,12 @@
 
 <Linkcard 
   url="https://www.iyf.tv/play/uGuMFP9oOzG?id=nSlzZFyo18o" 
-  title="[韩剧] 善意的竞争 [2025年] [豆瓣评分 8.6]" 
-  description="类型: 剧情 / 悬疑 / 惊悚"
-  description2="主演: 李惠利 / 郑秀斌 / 姜惠元 / 吴友利 / 崔荣宰"
-  description3="推荐指数：❤"
-  description4="描述: 讲述了转学生禹瑟琪与天才少女刘在伊之间发展出GL的故事"
+  title="[韩剧] 善意的竞争 선의의 경쟁 [2025年-韩语] [豆瓣评分 8.6]" 
+  description="类型:  剧情 / 悬疑 / 惊悚"
+  description2="演职表 ：[金泰熙] [金泰熙 / 闵艺智] [李惠利 / 郑秀斌 / 姜惠元 / 吴友利 / 崔荣宰]"
+  description3="更多信息：韩国 | 韩语 | 30分钟 * 16"
+  description4="剧情简介: 讲述了转学生禹瑟琪与天才少女刘在伊之间发展出GL的故事"
+  description5="推荐指数：❤"
   type="full"
   target="_black"
   logo="https://static.iyf.tv/upload/video/202502091621242131386.gif?w=216&h=309&format=jpg&mode=stretch"
