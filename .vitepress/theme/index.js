@@ -8,6 +8,7 @@ import Linkcard from "./components/Linkcard.vue"
 import Xgplayer from "./components/Xgplayer.vue"
 import Layout from './components/Layout.vue'
 import ArticleMetadata from "./components/ArticleMetadata.vue"
+import Img from './components/Img.vue'
 
 // 图片放大插件
 import { onMounted, watch, nextTick } from "vue";
@@ -30,6 +31,7 @@ export default {
   enhanceApp: ({router,app}) =>{
     
     // 注册为全局组件
+    app.component('Img', Img);
     app.component('Sandbox', Sandbox);
     app.component('Linkcard', Linkcard)
     app.component("Xgplayer", Xgplayer);

@@ -8,12 +8,11 @@
 
 ------
 
-
-::: timeline 2025-03-31
+::: timeline 2025-04-01
 <Linkcard 
-  url="./2025/20250331_Java日志框架" 
-  title="[文档]Slf4j日志框架的使用" 
-  description="由浅入深全面精讲多种日志框架（log4j、slf4j、logback、jul、juc、springboot）"
+  url="./2025/20250401_JUL原生日志框架" 
+  title="[文档]JUL原生日志框架" 
+  description="Java原生日志框架，不需要引入第三方依赖，使用简单，但主流项目中现在很少使用了"
   logo="/blog/icon/vitepress.png"
   type="full"
   /> 
@@ -28,8 +27,8 @@
   description="类型: 喜剧 / 爱情"
   description2="演职表 ：[苏彪] [杨玉婷] [金晨/孙阳/李雪琴/王皓/王耀庆]"
   description3="更多信息：中国大陆 | 汉语普通话 | 114分钟"
-  description4="剧情简介: 高级打工仔的外卖员限时体验券"
-  description5="推荐指数：❤❤"
+  description4="剧情简介: 金晨被渣男骗二十万后找专业骗子再骗回这些钱，并喜欢上骗子的故事"
+  description5="推荐指数：❤"
   type="full"
   target="_black"
   logo="https://image11.m1905.cn/uploadfile/2025/0105/20250105104145943991.jpg"
@@ -104,7 +103,7 @@
 
 ::: timeline 2025-03-16
 <Linkcard
-  title="[旅行]一塔一寺一西湖[杭州]"
+  title="[旅游]一塔一寺一西湖[杭州]"
   logo="/blog/topic/20250316一塔一寺一西湖.png"
  description="详情：<a href=https://www.xiaohongshu.com/discovery/item/67d6ed1c000000000603e835?source=webshare&xhsshare=pc_web&xsec_token=AB1Req51calGnmqXSUZ1epgR2E3dRnSBr-khjd3GmPNrU=&xsec_source=pc_share>小红书</a>"
   description2="路线: 雷峰塔-净慈寺-西湖"
