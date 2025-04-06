@@ -55,5 +55,4 @@ const interview =  [
   },
 ]
 
-
 export {startup,interview}

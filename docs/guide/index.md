@@ -8,6 +8,12 @@
   logo="/blog/icon/devops.png"
   />  
 
+  <Linkcard 
+  url="./python/" 
+  title="Python"  
+  logo="/blog/icon/python.png"
+  />
+
 <Linkcard 
   url="./interview/" 
   title="面试宝典"  
@@ -15,9 +21,9 @@
   />  
 
   <Linkcard 
-  url="./python/" 
-  title="Python"  
-  logo="/blog/icon/python.png"
+  url="../topic/信息系统项目管理师/" 
+  title="软考"  
+  logo="/blog/icon/ruankao.jpg"
   />
 
 
