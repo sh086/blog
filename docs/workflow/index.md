@@ -1,49 +1,19 @@
 # 工作流
 
-## 创作者中心
+## 大模型
+
+### 公用大模型
 
   <Linkcard 
-  url="./uploader/deepseek/" 
+  url="./deepseek/" 
   title="DeepSeek"  
   logo="/blog/icon/deepseek.png"
   />
 
-## 新媒体
 
-### 平台运营
 
-  <Linkcard 
-  url="./media/小红书/" 
-  title="小红书"  
-  logo="/blog/icon/xiaohongshu.png"
-  />
+### 私有大模型
 
-  <Linkcard 
-  url="" 
-  title="哔哩哔哩~"  
-  logo="/blog/icon/bilibili.png"
-  />
 
-  <Linkcard 
-  url="" 
-  title="抖音"  
-  logo="/blog/icon/tiktok.png"
-  />
 
-  <Linkcard 
-  url="" 
-  title="视频号"  
-  logo="/blog/icon/视频号.png"
-  />
-
-### 技术支持
-
-  <Linkcard 
-  url="" 
-  title="剪映"  
-  logo="/blog/icon/jianying.png"
-  />
-
-## 独立开发
-
-## 个体户经营
+## 应用

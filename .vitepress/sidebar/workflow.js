@@ -3,7 +3,7 @@ const xiaohongshu =  [
     text: '小红书',
     collapsed: false,
     items: [
-      { text: '快速开始', link: '/docs/workflow/media/小红书/'},
+      { text: '快速开始', link: './'},
       { text: '从0到1000粉起号', link: ''},
     ]
   },
