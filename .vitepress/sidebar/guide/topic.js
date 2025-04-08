@@ -16,13 +16,14 @@ const gaoxiang =  [
       { text: '综合知识', link: ''},
       { text: '案例分析', link: ''},
       { text: '论文', link: ''},
+      { text: '错题本', link: ''},
     ]
   },
   {
     text: '历年真题',
     collapsed: true,
     items: [
-      { text: '2021年上半年真题', link: '/docs/guide/topic/信息系统项目管理师/2021年上半年真题.md'},
+      { text: '2021年下半年真题', link: '/docs/guide/topic/信息系统项目管理师/2021年下半年真题.md'},
       { text: '', link: ''},
     ]
   },

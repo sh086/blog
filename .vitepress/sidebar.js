@@ -10,11 +10,13 @@ export default {
   '/docs/guide/webapp/startup/':startup,
   '/docs/guide/webapp/interview/':interview,
 
+   // 人工智能
+   '/docs/guide/smart/deepseek/':deepseek,
+
   // 考证
   '/docs/guide/topic/信息系统项目管理师/':gaoxiang,
 
   // 工作流
-  '/docs/workflow/deepseek/':deepseek,
 
   // 量化
 }

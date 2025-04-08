@@ -12,7 +12,7 @@
 
 ::: timeline 2025-05-20
   <Linkcard 
-  url="../topic/信息系统项目管理师/" 
+  url="/blog/docs/guide/topic/信息系统项目管理师/" 
   title="[文档] [软考高项]信息系统项目管理师 必拿下" 
   logo="/blog/icon/ruankao.jpg"
   type="full"
@@ -74,7 +74,7 @@
 
 ::: timeline 2025-04-01
 <Linkcard 
-  url="./2025/20250401_JUL原生日志框架" 
+  url="/blog/docs/notes/2025/20250401_JUL原生日志框架" 
   title="[文档]JUL原生日志框架" 
   description="Java原生日志框架，不需要引入第三方依赖，使用简单，但主流项目中现在很少使用了"
   logo="/blog/icon/vitepress.png"
@@ -103,10 +103,9 @@
 
 
 
-
 ::: timeline 2025-03-29
 <Linkcard 
-  url="./2025/20250329_使用Lombok神级插件简化代码" 
+  url="/blog/docs/notes/2025/20250329_使用Lombok神级插件简化代码" 
   title="[文档]使用Lombok神级插件简化代码" 
   description="速通Lombok所有使用技巧和底层原理"
   logo="/blog/icon/vitepress.png"
@@ -136,7 +135,7 @@
 
 ::: timeline 2025-03-23
 <Linkcard 
-  url="/blog/docs/images/2025/20250323_尚硅谷DeepSeek使用教程" 
+  url="/blog/docs/notes/2025/20250323_尚硅谷DeepSeek使用教程" 
   title="[教程]尚硅谷DeepSeek使用教程" 
   description="教程地址：<a href=https://www.bilibili.com/video/BV1uqKGeZEy1/?spm_id_from=333.1387.homepage.video_card.click>点击观看视频</a>"
   description2="描述：8大技巧、4大避坑 + DeepSeek本地部署" 
@@ -160,7 +159,7 @@
 
 ::: timeline 2025-03-18
 <Linkcard 
-  url="/blog/docs/images/2025/20250318_三步走解决提交GitHub超时的问题" 
+  url="/blog/docs/notes/2025/20250318_三步走解决提交GitHub超时的问题" 
   title="[文档]三步走解决提交GitHub超时的问题" 
   description="使用 [谷歌DNS/GitHub520] + [SSH协议] 完美解决提交GitHub超时问题" 
   logo="/blog/icon/vitepress.png"
@@ -213,7 +212,7 @@
 
 ::: timeline 2025-03-07
 <Linkcard 
-  url="/blog/docs/guide/webapp/vitepress/" 
+  url="/blog/docs/guide/webapp/index/vitepress/" 
   title="[文档]使用VitePress搭建在线博客" 
   description=" 使用Markdown 编写文档并将其部署到GitHub Page站点" 
   logo="/blog/icon/vitepress.png"
