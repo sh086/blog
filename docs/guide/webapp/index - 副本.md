@@ -8,23 +8,11 @@
   logo="/blog/icon/devops.png"
   />  
 
-  <Linkcard 
-  url="./python/" 
-  title="Python"  
-  logo="/blog/icon/python.png"
-  />
-
 <Linkcard 
   url="./interview/" 
   title="面试宝典"  
   logo="/blog/icon/google.png"
   />  
-
-  <Linkcard 
-  url="../topic/信息系统项目管理师/" 
-  title="软考"  
-  logo="/blog/icon/ruankao.jpg"
-  />
 
 
 
@@ -33,7 +21,7 @@
 ### 大前端开发
 
  <Linkcard 
-  url="./webapp/vuejs/" 
+  url="./index/vuejs/" 
   title="Vuejs"  
   logo="/blog/icon/vue.png"
   />
@@ -51,7 +39,7 @@
   />
 
   <Linkcard 
-  url="./webapp/vitepress/" 
+  url="./index/vitepress/" 
   title="Vitepress"  
   logo="/blog/icon/vitepress.png"
   />
@@ -96,7 +84,7 @@
 
 ## 云服务
 
-### DevOps流水线
+### 流水线
 
 <Linkcard 
   url="./devops/jenkins/" 
@@ -128,7 +116,7 @@
   logo="/blog/icon/k8s.png"
   />
 
-### 数据库运维
+### 数据库
 
 <Linkcard 
   url="" 
@@ -148,7 +136,7 @@
   logo="/blog/icon/mongodb.png"
   />
 
-### 应用中间件
+### 中间件
 
   <Linkcard 
   url="" 

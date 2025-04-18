@@ -3,8 +3,8 @@ interface Props {
     url: string
     title: string
     logo: string
-    target?: string // 默认：_blank 可选 normal、full
-    type?: string // 默认：normal 可选 normal、full
+    target?: string // 默认：_blank 可选 normal、full、video
+    type?: string // 默认：normal 可选 normal、full、video
     description?: string
     description2?: string
     description3?: string
@@ -31,6 +31,15 @@ const props = withDefaults(defineProps<Props>(), {
         <a :href="props.url" >
             <div class="logo">
                 <img alt="logo" :src="props.logo" />
+            </div>
+            <p class="description">{{ props.title }}</p>
+        </a>
+    </div>
+
+    <div v-if="props.type === 'video'" style="margin-top: 24px ;width: 210px; height: 140px;"class="linkcard">
+        <a :href="props.url" >
+            <div class="logo">
+                <img style="width: 200px; height: 100px;" alt="logo" :src="props.logo" />
             </div>
             <p class="description">{{ props.title }}</p>
         </a>

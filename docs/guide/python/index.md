@@ -1,5 +1,13 @@
-# Python
+# Python与自动化
+
+## 指南
+
+  <Linkcard 
+  url="" 
+  title="Python"  
+  logo="/blog/icon/python.png"
+  />
 
 
 
-应用于数据分析、自动化（运维、测试、部署）、人工智能等
+## 笔记
