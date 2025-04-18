@@ -4,7 +4,7 @@ const deepseek =  [
     text: 'DeepSeek',
     collapsed: false,
     items: [
-      { text: '快速开始', link: '/docs/workflow/uploader/deepseek/'},
+      { text: '快速开始', link: '/docs/guide/smart/deepseek/'},
       { text: '本地部署', link: ''},
     ]
   },
@@ -18,7 +18,7 @@ const deepseek =  [
     ]
   },
   {
-    text: '自定义',
+    text: 'AI训练师',
     collapsed: false, 
     items: [
       { text: '文娱砖家', link: ''},
