@@ -1,20 +1,4 @@
-
-
-## 订阅号
-
-  <Linkcard 
-  url="." 
-  title="小Lin说"  
-  logo="/blog/notes/战国时代_姜汁汽水.png"
-  />
-
-  <Linkcard 
-  url="." 
-  title="姜汁汽水"  
-  logo="/blog/notes/战国时代_姜汁汽水.png"
-  />
-
-## 2025年
+# 2025年
 
 <Linkcard 
   title="年度总结 [ ⬜ ✅]" 
