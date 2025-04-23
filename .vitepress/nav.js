@@ -3,14 +3,12 @@ export default [
   {
     text: '指南',
     items: [
-      { text: '互联网全栈开发', link: '/docs/guide/webapp/' },
-      { text: 'Python与自动化', link: '/docs/guide/python/' },
-      { text: '人工智能及应用', link: '/docs/guide/smart/' },
-      { text: '游戏编程', link: '/docs/guide/game/' },
-      { text: '专职技能认证', link: '/docs/guide/topic/' },
+      { text: '电影乌托邦🎬', link: '/docs/guide/movie/' },
+      { text: '地球环游记🌏', link: '/docs/guide/travel/' },
+      { text: '技能资格认证🎓', link: '/docs/guide/topic/' },
     ]
   },
+  {text: '开发', link: '/docs/develop/'},
   {text: '工作流', link: '/docs/workflow/'},
   {text: '量化', link: '/docs/quant/'},
-  {text: '智能体', link: '/docs/project/'},
 ] 

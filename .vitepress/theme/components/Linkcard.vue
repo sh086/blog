@@ -24,6 +24,23 @@ const props = withDefaults(defineProps<Props>(), {
     description4: '',
     description5: '',
 })
+
+import { ref } from 'vue';
+
+const isLoading = ref(true);
+const isError = ref(false);
+
+function onImageLoad() {
+    console.error('onImageLoad' + isLoading);
+    isLoading.value = false;
+}
+
+function onImageError() {
+    isLoading.value = false;
+    isError.value = true;
+    console.error('图片加载失败');
+}
+
 </script>
 
 <template>
@@ -38,8 +55,20 @@ const props = withDefaults(defineProps<Props>(), {
 
     <div v-if="props.type === 'video'" style="margin-top: 24px ;width: 210px; height: 140px;"class="linkcard">
         <a :href="props.url" >
-            <div class="logo">
-                <img style="width: 200px; height: 100px;" alt="logo" :src="props.logo" />
+            <div class="logo" style="width: 200px; height: 100px;">
+                <div v-if="isLoading">
+                    图片加载中... 请稍等<br/>
+                    (～￣▽￣)～
+                </div>
+                <div v-else-if="isError">
+                    图片加载失败了😂
+                </div>
+                <img 
+                      @load="onImageLoad"
+                      @error="onImageError"
+                      style="width: 200px; height: 100px;" 
+                      alt="logo" 
+                      :src="props.logo" />
             </div>
             <p class="description">{{ props.title }}</p>
         </a>

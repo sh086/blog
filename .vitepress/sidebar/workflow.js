@@ -1,9 +1,41 @@
+
+const deepseekBaseUrl = '/docs/workflow/deepseek/'
+
+const deepseek =  [
+  {
+    text: 'DeepSeek',
+    collapsed: false,
+    items: [
+      { text: '快速开始', link: deepseekBaseUrl},
+      { text: '本地部署', link: ''},
+    ]
+  },
+  {
+    text: '实用集成',
+    collapsed: false, 
+    items: [
+      { text: '多媒体应用', link: ''},
+      { text: '第三方平台接入', link: ''},
+      { text: '热点新闻分析', link: ''},
+    ]
+  },
+  {
+    text: 'AI训练师',
+    collapsed: false, 
+    items: [
+      { text: '文娱砖家', link: ''},
+      { text: '一品架构师', link: ''},
+      { text: '西虹市第二富', link: ''},
+    ]
+  },
+]
+
 const xiaohongshu =  [
   {
     text: '小红书',
     collapsed: false,
     items: [
-      { text: '快速开始', link: './'},
+      { text: '快速开始', link: ''},
       { text: '从0到1000粉起号', link: ''},
     ]
   },
@@ -25,4 +57,4 @@ const xiaohongshu =  [
   },
 ]
 
-export {xiaohongshu}
+export {xiaohongshu,deepseek}

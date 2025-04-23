@@ -1,22 +1,19 @@
-import  {vitepress,startup,interview} from './sidebar/guide/webapp.js'
-import  {xiaohongshu} from './sidebar/workflow.js'
-import  {deepseek} from './sidebar/guide/smart.js'
-import  {gaoxiang} from './sidebar/guide/topic.js'
+import  {vitepress,startup,interview} from './sidebar/develop.js'
+import  {deepseek} from './sidebar/workflow.js'
+import  {gaoxiang} from './sidebar/guide.js'
 
 export default {
 
   // 互联网全栈开发
-  '/docs/guide/webapp/index/vitepress/':vitepress,
-  '/docs/guide/webapp/startup/':startup,
-  '/docs/guide/webapp/interview/':interview,
+  '/docs/develop/webapp/vitepress/':vitepress,
+  '/docs/develop/startup/':startup,
+  '/docs/develop/interview/':interview,
 
-   // 人工智能
-   '/docs/guide/smart/deepseek/':deepseek,
+  // 指南
+  '/docs/guide/信息系统项目管理师/':gaoxiang,
 
-  // 考证
-  '/docs/guide/topic/信息系统项目管理师/':gaoxiang,
-
-  // 工作流
+   // 工作流
+   '/docs/workflow/deepseek/':deepseek,
 
   // 量化
 }
