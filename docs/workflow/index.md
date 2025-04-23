@@ -10,7 +10,7 @@
 
   <Linkcard 
   url="." 
-  title="番茄宇宙"  
+  title="番茄文娱"  
   logo="/blog/icon/fanqie.png"
   />
 
@@ -52,6 +52,8 @@
   logo="/blog/icon/midjourney.png"
   />
 
+### 智能家具
+
 ## 未归档笔记
 
 <br/>
@@ -67,5 +69,4 @@
   type="full"
   /> 
 :::
-
 

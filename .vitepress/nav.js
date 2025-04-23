@@ -5,6 +5,7 @@ export default [
     items: [
       { text: '电影乌托邦🎬', link: '/docs/guide/movie/' },
       { text: '地球环游记🌏', link: '/docs/guide/travel/' },
+      // { text: '艺术品鉴', link: '1' },
       { text: '技能资格认证🎓', link: '/docs/guide/topic/' },
     ]
   },
