@@ -10,7 +10,7 @@ export default {
   '/docs/develop/interview/':interview,
 
   // 指南
-  '/docs/guide/信息系统项目管理师/':gaoxiang,
+  '/docs/guide/topic/信息系统项目管理师/':gaoxiang,
 
    // 工作流
    '/docs/workflow/deepseek/':deepseek,
