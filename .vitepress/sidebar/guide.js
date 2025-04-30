@@ -1,19 +1,18 @@
 
-const gaoxiangBaseUrl = '/docs/guide/topic/信息系统项目管理师/'
+const hzrencaiBaseUrl = '/docs/guide/master/杭州人才认定/'
 
-const gaoxiang =  [
+const hzrencai =  [
   {
-    text: '信息系统项目管理师',
+    text: '杭州人才认定',
     collapsed: false,
     items: [
-      { text: '简介', link: gaoxiangBaseUrl},
-      { text: '高项错题本', link: ''},
+      { text: '简介', link: hzrencaiBaseUrl},
       { text: '软件著作权', link: ''},
-      { text: '杭州人才认定', link: ''},
+      { text: 'E类人才认定', link: ''},
     ]
   },
   {
-    text: '知识点',
+    text: '信息系统项目管理师',
     collapsed: false,
     items: [
       { text: '综合知识', link: ''},
@@ -25,7 +24,7 @@ const gaoxiang =  [
     text: '历年真题',
     collapsed: true,
     items: [
-      { text: '2021年下半年真题', link: gaoxiangBaseUrl + '2021年下半年真题.md'},
+      { text: '2021年下半年真题', link: hzrencaiBaseUrl + '2021年下半年真题.md'},
       { text: '', link: ''},
     ]
   },
@@ -33,4 +32,4 @@ const gaoxiang =  [
 ]
 
 
-export {gaoxiang}
+export {hzrencai}

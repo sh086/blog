@@ -1,6 +1,6 @@
 import  {vitepress,startup,interview} from './sidebar/develop.js'
 import  {deepseek} from './sidebar/workflow.js'
-import  {gaoxiang} from './sidebar/guide.js'
+import  {hzrencai} from './sidebar/guide.js'
 
 export default {
 
@@ -10,7 +10,7 @@ export default {
   '/docs/develop/interview/':interview,
 
   // 指南
-  '/docs/guide/topic/信息系统项目管理师/':gaoxiang,
+  '/docs/guide/master/杭州人才认定/':hzrencai,
 
    // 工作流
    '/docs/workflow/deepseek/':deepseek,
