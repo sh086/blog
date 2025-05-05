@@ -2,7 +2,17 @@
 
 
 
-## 技术指标
+## 技术栈
+
+### 数据分析
+
+  <Linkcard 
+  url="./python/" 
+  title="Python"  
+  logo="/blog/icon/python.png"
+  />
+
+### 开发者文档
 
   <Linkcard 
   url="." 

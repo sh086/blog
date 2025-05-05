@@ -8,12 +8,6 @@
   logo="/blog/icon/devops.png"
   />  
 
-  <Linkcard 
-  url="./python/" 
-  title="Python"  
-  logo="/blog/icon/python.png"
-  />
-
 <Linkcard 
   url="./interview/" 
   title="面试宝典"  
