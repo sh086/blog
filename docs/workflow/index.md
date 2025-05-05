@@ -27,12 +27,6 @@
 ### 大模型
 
   <Linkcard 
-  url="./python/" 
-  title="Python"  
-  logo="/blog/icon/python.png"
-  />
-
-  <Linkcard 
   url="./deepseek/" 
   title="DeepSeek"  
   logo="/blog/icon/deepseek.png"

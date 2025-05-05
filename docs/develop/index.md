@@ -1,12 +1,18 @@
 # 互联网全栈工程师
 
-## 快速入门
+## 置顶笔记
 
 <Linkcard 
   url="./startup/" 
-  title="StartUp"
+  title="快速开始"
   logo="/blog/icon/devops.png"
   />  
+
+  <Linkcard 
+  url="./python/" 
+  title="Python"  
+  logo="/blog/icon/python.png"
+  />
 
 <Linkcard 
   url="./interview/" 

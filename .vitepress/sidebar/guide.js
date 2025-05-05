@@ -24,7 +24,7 @@ const hzrencai =  [
     text: '历年真题',
     collapsed: true,
     items: [
-      { text: '2021年下半年真题', link: hzrencaiBaseUrl + '2021年下半年真题.md'},
+      { text: '2021年下半年真题', link: hzrencaiBaseUrl + '高项真题/2021年下半年真题.md'},
       { text: '', link: ''},
     ]
   },
