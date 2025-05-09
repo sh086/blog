@@ -164,7 +164,7 @@
 
 ::: timeline 2025-04-01
 <Linkcard 
-  url="/blog/docs/notes/2025/20250401_JUL原生日志框架" 
+  url="./backups/20250401_JUL原生日志框架" 
   title="[文档]JUL原生日志框架" 
   description="Java原生日志框架，不需要引入第三方依赖，使用简单，但主流项目中现在很少使用了"
   logo="/blog/icon/vitepress.png"
@@ -176,7 +176,7 @@
 
 ::: timeline 2025-03-29
 <Linkcard 
-  url="/blog/docs/notes/2025/20250329_使用Lombok神级插件简化代码" 
+  url="./backups/20250329_使用Lombok神级插件简化代码" 
   title="[文档]使用Lombok神级插件简化代码" 
   description="速通Lombok所有使用技巧和底层原理"
   logo="/blog/icon/vitepress.png"
@@ -188,7 +188,7 @@
 
 ::: timeline 2025-03-18
 <Linkcard 
-  url="/blog/docs/notes/2025/20250318_三步走解决提交GitHub超时的问题" 
+  url="./backups/20250318_三步走解决提交GitHub超时的问题" 
   title="[文档]三步走解决提交GitHub超时的问题" 
   description="使用 [谷歌DNS/GitHub520] + [SSH协议] 完美解决提交GitHub超时问题" 
   logo="/blog/icon/vitepress.png"

@@ -10,6 +10,6 @@ export default [
     ]
   },
   {text: '开发', link: '/docs/develop/'},
-  {text: '工作流', link: '/docs/workflow/'},
   {text: '量化', link: '/docs/quant/'},
+  {text: '工作流', link: '/docs/workflow/'},
 ] 

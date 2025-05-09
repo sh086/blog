@@ -24,8 +24,6 @@
 
 ## 技术栈
 
-### 大模型
-
   <Linkcard 
   url="./deepseek/" 
   title="DeepSeek"  
@@ -33,20 +31,10 @@
   />
 
   <Linkcard 
-  url="./chatgpt/" 
-  title="ChatGPT"  
-  logo="/blog/icon/chatgpt.png"
-  />
-
-### 多媒体处理
-
-  <Linkcard 
   url="." 
   title="Midjourney"  
   logo="/blog/icon/midjourney.png"
   />
-
-### 智能家具
 
 ## 未归档笔记
 
@@ -54,7 +42,7 @@
 
 ::: timeline 2025-03-23
 <Linkcard 
-  url="/blog/docs/notes/2025/20250323_尚硅谷DeepSeek使用教程" 
+  url="./backups/20250323_尚硅谷DeepSeek使用教程" 
   title="[教程]尚硅谷DeepSeek使用教程" 
   description="教程地址：<a href=https://www.bilibili.com/video/BV1uqKGeZEy1/?spm_id_from=333.1387.homepage.video_card.click>点击观看视频</a>"
   description2="描述：8大技巧、4大避坑 + DeepSeek本地部署" 

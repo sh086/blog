@@ -1,18 +1,44 @@
 # 量化
 
-
-
-## 技术栈
-
-### 数据分析
+## 市场分析
 
   <Linkcard 
-  url="./python/" 
+  url="." 
+  title="订阅号"  
+  logo="/blog/icon/gold.png"
+  />
+
+## 技术分析
+
+  <Linkcard 
+  url="./develop/python/" 
   title="Python"  
   logo="/blog/icon/python.png"
   />
 
-### 开发者文档
+ <Linkcard 
+  url="1" 
+  title="Numpy"  
+  logo="/blog/icon/numpy.png"
+  />
+
+ <Linkcard 
+  url="2" 
+  title="Pandas"  
+  logo="/blog/icon/pandas.png"
+  />
+
+ <Linkcard 
+  url="2" 
+  title="Matplotlib"  
+  logo="/blog/icon/matplotlib.png"
+  />
+
+ <Linkcard 
+  url="2" 
+  title="joinquent"  
+  logo="/blog/icon/joinquents.png"
+  />
 
   <Linkcard 
   url="." 
@@ -20,16 +46,16 @@
   logo="/blog/icon/ib.png"
   />
 
-## 订阅号
+## 未归档笔记
 
-  <Linkcard 
-  url="." 
-  title="小Lin说"  
-  logo="/blog/notes/xiaolin.jpg"
-  />
+<br/>
 
-  <Linkcard 
-  url="." 
-  title="姜汁汽水"  
-  logo="/blog/notes/战国时代_姜汁汽水.png"
-  />
+::: timeline 2025-05-06
+<Linkcard 
+  url="./backups/20250506_基于Python的股票分析与量化交易入门到实践" 
+  title="[教程] 基于Python的股票分析与量化交易入门到实践" 
+  description="基于Python的股票分析与量化交易入门到实践"
+  logo="/blog/icon/vitepress.png"
+  type="full"
+  /> 
+:::
