@@ -1,5 +1,21 @@
 # 工作流
 
+## 技术栈
+
+  <Linkcard 
+  url="./deepseek/" 
+  title="DeepSeek"  
+  logo="/blog/icon/deepseek.png"
+  />
+
+  <Linkcard 
+  url="." 
+  title="Midjourney"  
+  logo="/blog/icon/midjourney.png"
+  />
+
+
+
 ## AIGC应用
 
   <Linkcard 
@@ -21,20 +37,6 @@
   />
 
 
-
-## 技术栈
-
-  <Linkcard 
-  url="./deepseek/" 
-  title="DeepSeek"  
-  logo="/blog/icon/deepseek.png"
-  />
-
-  <Linkcard 
-  url="." 
-  title="Midjourney"  
-  logo="/blog/icon/midjourney.png"
-  />
 
 ## 未归档笔记
 
