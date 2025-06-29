@@ -1,8 +1,6 @@
 # 量化
 
-
-
-## 技术指标
+<br/>
 
   <Linkcard 
   url="." 
@@ -10,16 +8,27 @@
   logo="/blog/icon/ib.png"
   />
 
-## 订阅号
-
-  <Linkcard 
-  url="." 
-  title="小Lin说"  
-  logo="/blog/notes/xiaolin.jpg"
+ <Linkcard 
+  url="" 
+  title="JoinQuant"  
+  logo="/blog/icon/joinquents.png"
   />
 
-  <Linkcard 
-  url="." 
-  title="姜汁汽水"  
-  logo="/blog/notes/战国时代_姜汁汽水.png"
+ <Linkcard 
+  url="" 
+  title="Numpy"  
+  logo="/blog/icon/numpy.png"
   />
+
+ <Linkcard 
+  url="" 
+  title="Pandas"  
+  logo="/blog/icon/pandas.png"
+  />
+
+ <Linkcard 
+  url="" 
+  title="Matplotlib"  
+  logo="/blog/icon/matplotlib.png"
+  />
+

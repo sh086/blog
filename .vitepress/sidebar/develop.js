@@ -1,7 +1,6 @@
 
-const vitepressBaseUrl =  '/docs/develop/webapp/vitepress/';
+const vitepressBaseUrl =  '/docs/guide/develop/webapp/vitepress/';
 const startUpBaseUrl =  '/docs/develop/startup/';
-const interviewBaseUrl =  '/docs/develop/interview/';
 
 const vitepress =  [
   {
@@ -63,31 +62,4 @@ const startup =  [
 
 ]
 
-const interview =  [
-  {
-    text: '指南',
-    collapsed: false,
-    items: [
-      { text: '简介', link: interviewBaseUrl},
-      { text: '算法与设计模式', link: ''},
-      { text: '语言学习', link: ''},
-    ]
-  },
-  {
-    text: '技术面试',
-    collapsed: false,
-    items: [
-      { text: 'Java全栈开发', link: ''},
-      { text: 'GoLang云原生', link: ''},
-    ]
-  },
-  {
-    text: '行为面试',
-    collapsed: false,
-    items: [
-      { text: '团队', link: ''},
-    ]
-  },
-]
-
-export {startup,interview,vitepress}
+export {startup,vitepress}
