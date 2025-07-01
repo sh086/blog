@@ -24,9 +24,9 @@
 
 ::: timeline 2025-06-15
 <Linkcard 
-  url="/blog/docs/blog/2025/20250615_Linux安装清华源" 
-  title="[Linux]Linux安装清华源" 
-  description="Linux安装清华源"
+  url="/blog/docs/blog/2025/20250615_Linux安装清华源解决DNS访问不通的问题" 
+  title="[Linux]Linux安装清华源解决DNS访问不通的问题" 
+  description="Linux安装清华源解决DNS访问不通的问题"
   logo="/blog/icon/linux.png"
   type="full"
   /> 
