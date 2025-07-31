@@ -34,6 +34,18 @@
 
 
 
+::: timeline 2025-06-02
+<Linkcard 
+  url="/blog/docs/blog/2025/20250602_Python课后练习" 
+  title="[Python]Python课后练习" 
+  description="用Python语法解决具体的问题"
+  logo="/blog/icon/python.png"
+  type="full"
+  /> 
+:::
+
+
+
 ::: timeline 2025-05-30
 <Linkcard 
   url="/blog/docs/blog/2025/20250530_分布式任务调度平台XXL-JOB" 
@@ -191,6 +203,18 @@
   title="[前端]使用VitePress搭建在线博客" 
   description=" 使用Markdown 编写文档并将其部署到GitHub Page站点" 
   logo="/blog/icon/vitepress.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2024-01-01
+<Linkcard 
+  url="/blog/docs/blog/topic/funtl/" 
+  title="[教程]鲁斯菲尔-李卫民" 
+  description="Java全栈知识实战化讲解"
+  logo="/blog/icon/funtl.png"
   type="full"
   /> 
 :::

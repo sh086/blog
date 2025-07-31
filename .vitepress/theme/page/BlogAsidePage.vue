@@ -86,7 +86,7 @@ export default {
     return {
       recommendedArticles: [
         { id: 1, title: '使用VitePress搭建在线博客', url: '/blog/docs/guide/develop/webapp/vitepress/' },
-        { id: 2, title: '使用Lombok神级插件简化代码', url: '/blog/docs/blog/2025/20250329_使用Lombok神级插件简化代码' },
+        { id: 2, title: 'Java全栈知识实战化讲解', url: '/blog/docs/blog/topic/funtl/' },
         { id: 3, title: '爬取B站视频、评论和弹幕', url: '/blog/docs/blog/2025/20250503_爬取B站视频、评论和弹幕' }
       ]
     };

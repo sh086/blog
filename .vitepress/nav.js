@@ -11,6 +11,6 @@ export default [
     ]
   },
   {text: '量化', link: '/docs/quant/'},
-  {text: '自媒体', link: '/docs/media/'},
   {text: '工作流', link: '/docs/workflow/'},
+  {text: '自媒体', link: '/docs/media/'},
 ] 
