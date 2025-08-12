@@ -7,10 +7,10 @@ export default [
       { text: 'Python与数据分析', link: '/docs/guide/python/' },
       { text: '人工智能及应用', link: '/docs/guide/smart/' },
       { text: '游戏编程', link: '/docs/guide/game/' },
-      { text: '工作指南', link: '/docs/guide/master/' },
+      { text: '面试指南', link: '/docs/guide/interview/' },
     ]
   },
+  {text: '自媒体', link: '/docs/media/'},
   {text: '量化', link: '/docs/quant/'},
   {text: '工作流', link: '/docs/workflow/'},
-  {text: '自媒体', link: '/docs/media/'},
 ] 
