@@ -10,6 +10,20 @@
 
 
 
+
+
+::: timeline 2025-08-14
+<Linkcard 
+  url="/blog/docs/blog/2025/20250814_CapCut教程全攻略" 
+  title="[教程]CapCut教程全攻略" 
+  description="从入门到封神，这可能是B站最详细的剪映教程！"
+  logo="/blog/icon/capcut.png"
+  type="full"
+  /> 
+:::
+
+
+
 ::: timeline 2025-06-27
 <Linkcard 
   url="/blog/docs/blog/2025/20250627_尚硅谷Vue3入门到实战" 
@@ -46,7 +60,7 @@
 
 
 
-::: timeline 2025-05-30
+::: timeline 2025-05-23
 <Linkcard 
   url="/blog/docs/blog/2025/20250530_分布式任务调度平台XXL-JOB" 
   title="[Java]分布式任务调度平台XXL-JOB" 
