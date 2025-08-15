@@ -10,6 +10,40 @@
 
 
 
+::: timeline 2025-08-16
+<Linkcard 
+  url="/blog/docs/blog/2025/20250627_微信小程序" 
+  title="[教程]微信小程序" 
+  description="微信小程序"
+  logo="/blog/icon/wechat-mini.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2025-08-15
+<Linkcard 
+  url="/blog/docs/blog/2025/20250627_kubernetes" 
+  title="[教程]kubernetes" 
+  description="kubernetes"
+  logo="/blog/icon/kubernetes.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2025-08-16
+<Linkcard 
+  url="/blog/docs/blog/2025/20250627_尚硅谷Vue3入门到实战" 
+  title="[教程]尚硅谷Vue3入门到实战" 
+  description="尚硅谷Vue3入门到实战，最新版 vue3+TypeScript前端开发教程"
+  logo="/blog/icon/vue.png"
+  type="full"
+  /> 
+:::
+
 
 
 ::: timeline 2025-08-14
@@ -24,19 +58,7 @@
 
 
 
-::: timeline 2025-06-27
-<Linkcard 
-  url="/blog/docs/blog/2025/20250627_尚硅谷Vue3入门到实战" 
-  title="[教程]尚硅谷Vue3入门到实战" 
-  description="尚硅谷Vue3入门到实战，最新版 vue3+TypeScript前端开发教程"
-  logo="/blog/icon/vue.png"
-  type="full"
-  /> 
-:::
-
-
-
-::: timeline 2025-06-15
+::: timeline 2025-07-10
 <Linkcard 
   url="/blog/docs/blog/2025/20250615_Linux安装清华源解决DNS访问不通的问题" 
   title="[Linux]Linux安装清华源解决DNS访问不通的问题" 
@@ -48,7 +70,7 @@
 
 
 
-::: timeline 2025-06-02
+::: timeline 2025-06-21
 <Linkcard 
   url="/blog/docs/blog/2025/20250602_Python课后练习" 
   title="[Python]Python课后练习" 
@@ -202,7 +224,7 @@
 ::: timeline 2025-03-18
 <Linkcard 
   url="/blog/docs/blog/2025/20250318_三步走解决提交GitHub超时的问题" 
-  title="[工具]三步走解决提交GitHub超时的问题" 
+  title="[Git]三步走解决提交GitHub超时的问题" 
   description="使用 [谷歌DNS/GitHub520] + [SSH协议] 完美解决提交GitHub超时问题" 
   logo="/blog/icon/github.png"
   type="full"
@@ -214,7 +236,7 @@
 ::: timeline 2025-03-07
 <Linkcard 
   url="/blog/docs/guide/develop/webapp/vitepress/" 
-  title="[前端]使用VitePress搭建在线博客" 
+  title="[Vue]使用VitePress搭建在线博客" 
   description=" 使用Markdown 编写文档并将其部署到GitHub Page站点" 
   logo="/blog/icon/vitepress.png"
   type="full"
@@ -228,7 +250,7 @@
   url="/blog/docs/blog/topic/funtl/" 
   title="[教程]鲁斯菲尔-李卫民" 
   description="Java全栈知识实战化讲解"
-  logo="/blog/icon/funtl.png"
+  logo="/blog/icon/qainfeng.png"
   type="full"
   /> 
 :::
