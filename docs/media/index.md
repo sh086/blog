@@ -1,16 +1,12 @@
 # 自媒体
 
-
-
-## 技术支持
+<br/>
 
   <Linkcard 
   url="." 
   title="Midjourney"  
   logo="/blog/icon/midjourney.png"
   />
-
-## 平台运营
 
   <Linkcard 
   url="." 

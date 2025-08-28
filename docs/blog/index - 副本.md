@@ -10,12 +10,60 @@
 
 
 
-::: timeline 2025-08-28
+::: timeline 2025-08-16
 <Linkcard 
-  url="/blog/docs/guide/develop/phone/wechat/" 
-  title="[教程]微信公众平台" 
-  description="微信小程序、公众号、服务号、微信支付、视频号等"
-  logo="/blog/icon/wechat-platform.png"
+  url="/blog/docs/blog/2025/20250627_微信小程序" 
+  title="[教程]Pr" 
+  description="PR"
+  logo="/blog/icon/pr.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2025-08-16
+<Linkcard 
+  url="/blog/docs/blog/2025/20250627_微信小程序" 
+  title="[教程]微信小程序" 
+  description="微信小程序"
+  logo="/blog/icon/wechat-mini.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2025-08-15
+<Linkcard 
+  url="/blog/docs/blog/2025/20250627_kubernetes" 
+  title="[教程]kubernetes" 
+  description="kubernetes"
+  logo="/blog/icon/kubernetes.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2025-08-16
+<Linkcard 
+  url="/blog/docs/blog/2025/20250627_尚硅谷Vue3入门到实战" 
+  title="[教程]尚硅谷Vue3入门到实战" 
+  description="尚硅谷Vue3入门到实战，最新版 vue3+TypeScript前端开发教程"
+  logo="/blog/icon/vue.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2025-08-14
+<Linkcard 
+  url="/blog/docs/blog/2025/20250814_CapCut教程全攻略" 
+  title="[教程]CapCut教程全攻略" 
+  description="从入门到封神，这可能是B站最详细的剪映教程！"
+  logo="/blog/icon/capcut.png"
   type="full"
   /> 
 :::

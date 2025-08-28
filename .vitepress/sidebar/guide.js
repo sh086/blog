@@ -1,36 +1,37 @@
 
-const vitepressBaseUrl =  '/docs/guide/develop/webapp/vitepress/';
 const startUpBaseUrl =  '/docs/develop/startup/';
+const hzrencaiBaseUrl = '/docs/guide/master/杭州人才认定/'
 
-const vitepress =  [
+const hzrencai =  [
   {
-    text: 'VitePress',
+    text: '杭州人才认定',
     collapsed: false,
     items: [
-      // link需要使用全路径,不能使用相对路径 否则侧边栏选中项变成蓝色 这一效果会失效
-      { text: '快速开始', link: vitepressBaseUrl},
-      { text: '站点配置', link: vitepressBaseUrl+ '01_站点配置'},
-      { text: '部署', link: vitepressBaseUrl + '02_部署'},
+      { text: '简介', link: hzrencaiBaseUrl},
+      { text: '软件著作权', link: ''},
+      { text: 'E类人才认定', link: ''},
     ]
   },
   {
-    text: '进阶',
-    collapsed: false, 
+    text: '信息系统项目管理师',
+    collapsed: false,
     items: [
-      { text: '路由', link: vitepressBaseUrl + '03_路由'},
-      { text: 'MarkDown', link: vitepressBaseUrl + '04_MarkDown'},
+      { text: '综合知识', link: ''},
+      { text: '案例分析', link: ''},
+      { text: '论文', link: ''},
     ]
   },
   {
-    text: '拓展',
-    collapsed: false, 
+    text: '历年真题',
+    collapsed: true,
     items: [
-      { text: '自定义主题', link: vitepressBaseUrl + '05_自定义主题'},
-      { text: '第三方插件', link: vitepressBaseUrl + '06_第三方插件'},
-      { text: '访问统计', link: vitepressBaseUrl + '07_访问统计'},
+      { text: '2021年下半年真题', link: hzrencaiBaseUrl + '高项真题/2021年下半年真题.md'},
+      { text: '', link: ''},
     ]
   },
+  
 ]
+
 
 const startup =  [
   {
@@ -62,4 +63,4 @@ const startup =  [
 
 ]
 
-export {startup,vitepress}
+export {startup,hzrencai}
