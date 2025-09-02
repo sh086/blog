@@ -17,7 +17,7 @@
 <Linkcard 
   url="/blog/docs/guide/develop/phone/wechat/" 
   title="微信公众平台"
-  logo="/blog/icon/wechat-platform.png"
+  logo="/blog/icon/wechat-mini.png"
   /> 
 
 
