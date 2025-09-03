@@ -12,9 +12,9 @@
 
 ::: timeline 2025-08-28
 <Linkcard 
-  url="/blog/docs/blog/2025/20250902_黑马程序员前端微信小程序开发教程" 
-  title="[教程]黑马程序员前端微信小程序开发教程" 
-  description="微信小程序从基础到发布全流程_企业级商城实战,含uni-app项目多端部署"
+  url="/blog/docs/blog/2025/20250902_尚硅谷微信小程序开发教程" 
+  title="[教程]尚硅谷微信小程序开发教程" 
+  description="尚硅谷微信小程序开发教程，最新版微信小程序项目实战"
   logo="/blog/icon/wechat-mini.png"
   type="full"
   /> 
