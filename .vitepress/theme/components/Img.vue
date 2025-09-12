@@ -3,10 +3,12 @@ import { ref } from 'vue';
 
 interface Props {
     src: string
+    width?: string | number  // 新增 width 属性
 }
 
 const props = withDefaults(defineProps<Props>(), {
-    src: ''
+    src: '',
+    width: ''  // 默认值
 });
 
 const isLoading = ref(true);
@@ -34,6 +36,7 @@ function onImageError() {
     <div v-if="!isError">
       <img
         :src="props.src"
+        :style="{ width: props.width ? `${props.width}px` : 'auto' }"
         @load="onImageLoad"
         @error="onImageError"
       />
