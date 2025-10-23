@@ -10,12 +10,48 @@
 
 
 
-::: timeline 2025-08-28
+::: timeline -
 <Linkcard 
   url="/blog/docs/blog/2025/20250902_尚硅谷微信小程序开发教程" 
-  title="[教程]尚硅谷微信小程序开发教程" 
+  title="[Wechat]尚硅谷微信小程序开发教程" 
   description="尚硅谷微信小程序开发教程，最新版微信小程序项目实战"
   logo="/blog/icon/wechat-mini.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2025-10-24
+<Linkcard 
+  url="/blog/docs/blog/2025/20251023_SpringBoot动态化开启定时任务" 
+  title="[Java]JDK新特性" 
+  description="Lambda表达式，Optional，Stream流"
+  logo="/blog/icon/java.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2025-10-23
+<Linkcard 
+  url="/blog/docs/blog/2025/20251023_SpringBoot动态化开启定时任务" 
+  title="[Java]SpringBoot动态化开启定时任务" 
+  description="SpringBoot动态化开启定时任务"
+  logo="/blog/icon/springboot.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2025-09-12
+<Linkcard 
+  url="/blog/docs/blog/2025/20250912_支持访问多个URL路径前缀" 
+  title="[Java]支持访问多个URL路径前缀" 
+  description="支持访问多个URL路径前缀"
+  logo="/blog/icon/spring.png"
   type="full"
   /> 
 :::
@@ -89,7 +125,7 @@
   url="/blog/docs/blog/2025/20250503_爬取B站视频、评论和弹幕" 
   title="[Python]爬取B站视频、评论和弹幕" 
   description="爬取B站视频、评论和弹幕"
-  logo="/blog/icon/python.png"
+  logo="/blog/icon/bilibili.png"
   type="full"
   /> 
 
@@ -102,7 +138,7 @@
   url="/blog/docs/blog/2025/20250422_爬取腾讯TV视频" 
   title="[Python]爬取腾讯TV视频" 
   description="爬取腾讯视频首页的任意一个视频到本地"
-  logo="/blog/icon/python.png"
+  logo="/blog/icon/txsp.png"
   type="full"
   /> 
 
@@ -128,7 +164,7 @@
   url="/blog/docs/blog/2025/20250409_爬取雪球沪A成交额信息" 
   title="[Python]爬取雪球沪A成交额信息" 
   description="爬取雪球沪A成交额信息到CVS表格中，并将数据在图表中展示"
-  logo="/blog/icon/python.png"
+  logo="/blog/icon/stock.png"
   type="full"
   /> 
 :::
@@ -140,7 +176,7 @@
   url="/blog/docs/blog/2025/20250401_JUL原生日志框架" 
   title="[Java]JUL原生日志框架" 
   description="Java原生日志框架，不需要引入第三方依赖，使用简单，但主流项目中现在很少使用了"
-  logo="/blog/icon/java.png"
+  logo="/blog/icon/log.png"
   type="full"
   /> 
 :::
@@ -162,7 +198,7 @@
 ::: timeline 2025-03-23
 <Linkcard 
   url="/blog/docs/blog/2025/20250323_尚硅谷DeepSeek使用教程" 
-  title="[教程]尚硅谷DeepSeek使用教程" 
+  title="[GPT]尚硅谷DeepSeek使用教程" 
   description="教程地址：<a href=https://www.bilibili.com/video/BV1uqKGeZEy1/?spm_id_from=333.1387.homepage.video_card.click>点击观看视频</a>"
   description2="描述：8大技巧、4大避坑 + DeepSeek本地部署" 
   description3="时长：02:17:25"
@@ -176,7 +212,7 @@
 ::: timeline 2025-03-20
 <Linkcard 
   url="https://picx-docs.xpoet.cn/usage-guide/get-start.html" 
-  title="[工具]PicX图床使用手册" 
+  title="[Tools]PicX图床使用手册" 
   description="PicX 图床服务功能基于 GitHub API 实现" 
   logo="https://picx-docs.xpoet.cn/images/logo.png"
   type="full"

@@ -10,7 +10,6 @@ export default [
       { text: '面试指南', link: '/docs/guide/interview/' },
     ]
   },
-  {text: '自媒体', link: '/docs/media/'},
   {text: '量化', link: '/docs/quant/'},
   {text: '工作流', link: '/docs/workflow/'},
 ] 

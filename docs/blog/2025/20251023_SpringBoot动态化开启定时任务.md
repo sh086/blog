@@ -1,14 +1,16 @@
 # 动态化开启定时任务
 
-​	　在部署多个实例的时候，为了避免多个定时任务同步执行时造成的数据库死锁、数据一致性等问题，可以使用SpringBoot中提供的条件注解`@Conditional`，来实现只有单个实例执行定时任务。
+​	　在部署多个实例的时候，为了避免多个定时任务同步执行时造成的数据库死锁、数据一致性等问题，可以使用SpringBoot中提供的条件注解`@Conditional`，来实现**虽部署多个负载，但只有单个实例执行定时任务**的需求。
 
-**参考文献**：
+**参考资料**：
 
 - [动态控制定时任务开启和关闭](https://blog.csdn.net/weixin_28873283/article/details/112833287)
 
 
 
-## @Conditional注解
+## 快速开始
+
+### 设置启用条件
 
 ​	　首先，需要将启动类上面的 `@EnableScheduling` 注解需要去掉。
 
@@ -27,10 +29,10 @@ public class Application {
 ```yml
 #是否启用定时任务
 enable:
-  scheduled: true
+  scheduled: false
 ```
 
-​	　接着，新建`ScheduledCondition`类，根据`enable.scheduled`属性值，完成动态条件的设定。
+​	　接着，新建`ScheduledCondition`类，读取`enable.scheduled`属性值。
 
 ```java
 import org.springframework.context.annotation.Condition;
@@ -50,7 +52,7 @@ public class ScheduledCondition implements Condition {
 
 
 
-## 启用条件注解
+### ScheduleConfig
 
 ​	　SpringBoot中`@Scheduled`注解，是被一个叫做 `ScheduledAnnotationBeanPostProcessor` 的类所拦截的，所以，我们可以通过条件注解`@Conditional`来判断`ScheduledCondition`条件是否成立，来决定是否创建这个 `bean`，如果没有这个 `bean`，`@Scheduled` 就不会被拦截，那么定时任务肯定不会执行了。
 
@@ -70,13 +72,15 @@ public class ScheduleConfig {
 }
 ```
 
-​	　至此，对于**所有**通过`@Scheduled`实现的定时任务已经可以实现动态控制了。但是，如果定时任务是通过`while循环`实现的，可以直接将`@Conditional`注解置于该`定时任务类`上即可。
+​	　至此，对于**所有**通过`@Scheduled`实现的定时任务已经可以实现动态控制了。但是，如果定时任务是通过`while循环`实现的，还需将`@Conditional`注解置于该`定时任务类`上才行。
 
 
 
 ## 测试运行
 
-​	　首先，新建`@Scheduled`注解的定时任务，若该定时任务启用，则会在控制台上打印`@Scheduled定时任务运行`日志。
+### @Scheduled实现
+
+​	　新建`@Scheduled`注解的定时任务，若该定时任务启用，则会在控制台上打印日志。
 
 ```java
 @Component
@@ -89,7 +93,11 @@ public class Task {
 }
 ```
 
-​	　然后，新建`while循环`实现的定时任务，若该定时任务启用，则会在控制台上打印`while定时任务运行`日志。
+
+
+### while循环实现
+
+​	　新建`while循环`实现的定时任务，若该定时任务启用，则会在控制台上打印日志。
 
 ```java{8}
 import org.springframework.beans.factory.InitializingBean;
