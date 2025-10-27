@@ -24,8 +24,8 @@
 
 ::: timeline 2025-10-24
 <Linkcard 
-  url="/blog/docs/blog/2025/20251023_SpringBoot动态化开启定时任务" 
-  title="[Java]JDK新特性" 
+  url="/blog/docs/blog/2025/20251028_JDK8新特性" 
+  title="[Java]JDK8新特性" 
   description="Lambda表达式，Optional，Stream流"
   logo="/blog/icon/java.png"
   type="full"
