@@ -6,6 +6,7 @@ import NotFound from './NotFound.vue'
 import {useRoute,useData,inBrowser} from 'vitepress'
 import Notice from "./Notice.vue"
 import Backtotop from "./Backtotop.vue"
+import BlogAsidePage from '../page/BlogAsidePage.vue'
 
 const {page,isDark} = useData()
 const {Layout} = DefaultTheme
@@ -36,9 +37,9 @@ watch(isDark, (dark) => {
   <Layout>
     <!-- #not-found 这里使用了插槽-->
     <!-- 具体可见https://vitepress.dev/zh/guide/extending-default-theme#layout-slots -->
-    <template #not-found>
+    <!-- <template #not-found>
       <NotFound></NotFound>
-    </template>
+    </template> -->
 
     <!-- 公告  -->
     <!-- <template #layout-top>
@@ -48,6 +49,12 @@ watch(isDark, (dark) => {
     <!-- 返回顶部 -->
     <template #doc-footer-before>
       <Backtotop></Backtotop>
+    </template>
+
+    <template #aside-top>
+      <div v-if="page.filePath.includes('docs/blog/index.md')">
+        <BlogAsidePage></BlogAsidePage>
+      </div>
     </template>
 
     <!-- 评论框 -->

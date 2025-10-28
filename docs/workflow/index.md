@@ -19,11 +19,3 @@
   title="番茄文娱"  
   logo="/blog/icon/fanqie.png"
   />
-
-  <Linkcard 
-  url="." 
-  title="AppStore"  
-  logo="/blog/icon/apple.png"
-  />
-
-
