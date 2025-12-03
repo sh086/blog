@@ -10,22 +10,10 @@
 
 
 
-::: timeline -
-<Linkcard 
-  url="/blog/docs/blog/2025/20250902_尚硅谷微信小程序开发教程" 
-  title="[Wechat]尚硅谷微信小程序开发教程" 
-  description="尚硅谷微信小程序开发教程，最新版微信小程序项目实战"
-  logo="/blog/icon/wechat-mini.png"
-  type="full"
-  /> 
-:::
-
-
-
 ::: timeline 2025-10-24
 <Linkcard 
   url="/blog/docs/blog/2025/20251028_JDK8新特性" 
-  title="[Java]JDK8新特性" 
+  title="[Java]JDK8语法新特性" 
   description="Lambda表达式，Optional，Stream流"
   logo="/blog/icon/java.png"
   type="full"
@@ -125,7 +113,7 @@
   url="/blog/docs/blog/2025/20250503_爬取B站视频、评论和弹幕" 
   title="[Python]爬取B站视频、评论和弹幕" 
   description="爬取B站视频、评论和弹幕"
-  logo="/blog/icon/bilibili.png"
+  logo="/blog/icon/python.png"
   type="full"
   /> 
 
@@ -138,7 +126,7 @@
   url="/blog/docs/blog/2025/20250422_爬取腾讯TV视频" 
   title="[Python]爬取腾讯TV视频" 
   description="爬取腾讯视频首页的任意一个视频到本地"
-  logo="/blog/icon/txsp.png"
+  logo="/blog/icon/python.png"
   type="full"
   /> 
 
@@ -164,7 +152,7 @@
   url="/blog/docs/blog/2025/20250409_爬取雪球沪A成交额信息" 
   title="[Python]爬取雪球沪A成交额信息" 
   description="爬取雪球沪A成交额信息到CVS表格中，并将数据在图表中展示"
-  logo="/blog/icon/stock.png"
+  logo="/blog/icon/python.png"
   type="full"
   /> 
 :::

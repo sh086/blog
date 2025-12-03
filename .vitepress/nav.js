@@ -1,4 +1,5 @@
 export default [
+  {text: '主页', link: '/'},
   {text: '博客', link: '/docs/blog/'},
   {
     text: '指南',
@@ -12,4 +13,5 @@ export default [
   },
   {text: '工作流', link: '/docs/workflow/'},
   {text: '量化', link: '/docs/quant/'},
+  // {text: '创业', link: ''},
 ] 
