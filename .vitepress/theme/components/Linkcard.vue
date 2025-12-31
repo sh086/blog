@@ -45,7 +45,7 @@ function onImageError() {
 
 <template>
     <div v-if="props.type === 'normal'" style="margin-top: 24px" class="linkcard">
-        <a :href="props.url" >
+        <a :href="props.url" :target="props.target">
             <div class="logo">
                 <img alt="logo" :src="props.logo" />
             </div>

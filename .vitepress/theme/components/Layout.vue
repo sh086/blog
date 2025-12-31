@@ -6,7 +6,7 @@ import NotFound from './NotFound.vue'
 import {useRoute,useData,inBrowser} from 'vitepress'
 import Notice from "./Notice.vue"
 import Backtotop from "./Backtotop.vue"
-import BlogAsidePage from '../page/BlogAsidePage.vue'
+import DevelopAsidePage from '../page/DevelopAsidePage.vue'
 
 const {page,isDark} = useData()
 const {Layout} = DefaultTheme
@@ -52,8 +52,8 @@ watch(isDark, (dark) => {
     </template>
 
     <template #aside-top>
-      <div v-if="page.filePath.includes('docs/blog/index.md')">
-        <BlogAsidePage></BlogAsidePage>
+      <div v-if="page.filePath.includes('docs/develop/index.md')">
+        <DevelopAsidePage></DevelopAsidePage>
       </div>
     </template>
 

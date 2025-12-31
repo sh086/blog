@@ -60,7 +60,7 @@ export default defineConfig({
      // 页脚设置
     footer: {
        message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025-present S.H'
+      copyright: 'Copyright © 2025-至今 S.H'
     },
 
     // 上一页和下一页
