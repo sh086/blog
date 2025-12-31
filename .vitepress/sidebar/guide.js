@@ -1,66 +1,67 @@
 
-const startUpBaseUrl =  '/docs/develop/startup/';
-const hzrencaiBaseUrl = '/docs/guide/master/杭州人才认定/'
-
-const hzrencai =  [
-  {
-    text: '杭州人才认定',
-    collapsed: false,
-    items: [
-      { text: '简介', link: hzrencaiBaseUrl},
-      { text: '软件著作权', link: ''},
-      { text: 'E类人才认定', link: ''},
-    ]
-  },
-  {
-    text: '信息系统项目管理师',
-    collapsed: false,
-    items: [
-      { text: '综合知识', link: ''},
-      { text: '案例分析', link: ''},
-      { text: '论文', link: ''},
-    ]
-  },
-  {
-    text: '历年真题',
-    collapsed: true,
-    items: [
-      { text: '2021年下半年真题', link: hzrencaiBaseUrl + '高项真题/2021年下半年真题.md'},
-      { text: '', link: ''},
-    ]
-  },
-  
-]
-
-
-const startup =  [
+/**
+ * 指南左侧栏
+ */
+const index =  [
   {
     text: '指南',
     collapsed: false,
     items: [
-      { text: '快速开始', link: startUpBaseUrl},
-      { text: 'Hello Word一镜到底', link: startUpBaseUrl + '01_Hello Word一镜到底'},
-      { text: '日志分析与监控', link: startUpBaseUrl + '02_日志分析与监控'},
+      { text: '简介', link: '/docs/guide/'},
+      { text: '快速开始', link: '/docs/guide/startup/'},
+      { text: '面试宝典', link: '/docs/guide/interview/'},
     ]
   },
   {
-    text: '业务开发',
-    collapsed: false,
+    text: '知识点',
+    collapsed: false, 
     items: [
-      { text: 'DevOps团队搭建', link: startUpBaseUrl + '03_DevOps团队搭建'},
-      { text: '史上最全Java工具类', link: startUpBaseUrl + '04_史上最全Java工具类'},
-      { text: '统一认证中心', link: startUpBaseUrl + '05_统一认证中心'},
-      { text: '微服务解决复杂问题', link: startUpBaseUrl + '06_微服务解决复杂问题'},
+      { text: '互联网全栈工程师', link: '/docs/guide/webapp/'},
+      { text: '人工智能及应用', link: '/docs/guide/chatgpt/'},
     ]
   },
   {
-    text: '毕业设计',
-    collapsed: false,
+    text: '实践',
+    collapsed: false, 
     items: [
-      { text: '哔哩哔哩 (゜-゜)つロ', link: ''},
+      { text: '练手项目', link: ''},
     ]
   },
-
 ]
 
-export {startup,hzrencai}
+
+/**
+ * VitePress左侧栏
+ */
+const vitepressBaseUrl =  '/docs/guide/webapp/vitepress/';
+const vitepress =  [
+  {
+    text: 'VitePress',
+    collapsed: false,
+    items: [
+      // link需要使用全路径,不能使用相对路径 否则侧边栏选中项变成蓝色 这一效果会失效
+      { text: '快速开始', link: vitepressBaseUrl},
+      { text: '站点配置', link: vitepressBaseUrl+ '01_站点配置'},
+      { text: '部署', link: vitepressBaseUrl + '02_部署'},
+    ]
+  },
+  {
+    text: '进阶',
+    collapsed: false, 
+    items: [
+      { text: '路由', link: vitepressBaseUrl + '03_路由'},
+      { text: 'MarkDown', link: vitepressBaseUrl + '04_MarkDown'},
+    ]
+  },
+  {
+    text: '拓展',
+    collapsed: false, 
+    items: [
+      { text: '自定义主题', link: vitepressBaseUrl + '05_自定义主题'},
+      { text: '第三方插件', link: vitepressBaseUrl + '06_第三方插件'},
+      { text: '访问统计', link: vitepressBaseUrl + '07_访问统计'},
+    ]
+  },
+]
+
+export {index,vitepress}

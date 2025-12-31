@@ -44,7 +44,6 @@ export default defineConfig({
     socialLinks: [
       { icon: 'youtube', link: 'https://www.youtube.com/@suhe086' },
       { icon: 'bilibili', link: 'https://space.bilibili.com/393064787' },
-      { icon: 'xiaohongshu', link: 'https://www.xiaohongshu.com/user/profile/63fb3ba70000000010028dda' },
       { icon: 'github', link: 'https://github.com/sh086' },
     ],
 
@@ -61,7 +60,7 @@ export default defineConfig({
      // 页脚设置
     footer: {
        message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025-present S.H'
+      copyright: 'Copyright © 2025-至今 S.H'
     },
 
     // 上一页和下一页
