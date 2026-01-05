@@ -22,11 +22,11 @@ features:
     details: 整理日常工作、学习中的知识点，并进行轻总结，提升学习效率和实际应用能力。
   - icon: 🐳
     title: 开发
-    details: 学习Java、Web、DevOps、IOS、小程序等互联网全栈知识。
+    details: 学习Python、Java、DevOps自动化、WebApp、IOS、Wechant等实现全栈开发的目标。
   - icon: 🚀
     title: 工作流
-    details: 学习ConfigUI、Coze等工作流的使用。
+    details: 学习大语言模型以及ConfigUI、Coze等工作流的使用。
   - icon: 💵
     title: 量化
-    details: 学习Python、GPT以进行数据分析与预测。
+    details: 基于Python和GPT对大数据进行分析并建模，达到预测市场的目的。
 ---

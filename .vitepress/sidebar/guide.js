@@ -13,11 +13,11 @@ const index =  [
     ]
   },
   {
-    text: '知识点',
+    text: '专项',
     collapsed: false, 
     items: [
       { text: '互联网全栈工程师', link: '/docs/guide/webapp/'},
-      { text: '人工智能及应用', link: '/docs/guide/chatgpt/'},
+      { text: '大语言模型应用', link: '/docs/guide/chatgpt/'},
     ]
   },
   {
