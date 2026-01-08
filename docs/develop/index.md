@@ -12,7 +12,7 @@
 
 ::: timeline 2025-10-24
 <Linkcard 
-  url="/blog/docs/DD/2025/20251028_JDK8新特性" 
+  url="/blog/docs/develop/2025/20251028_JDK8新特性" 
   title="[Java]JDK8语法新特性【完成中】" 
   description="Lambda表达式，Optional，Stream流"
   logo="/blog/icon/java.png"
