@@ -2,23 +2,11 @@
 
 <Linkcard 
   title="年度总结 [ ⬜ ✅]" 
-  description="✅ 2025年：11条" 
+  description="✅ 2025年：16条" 
   type="full"
   /> 
 
 ------
-
-
-
-::: timeline 2025-10-24
-<Linkcard 
-  url="/blog/docs/develop/2025/20251028_JDK8新特性" 
-  title="[Java]JDK8语法新特性【完成中】" 
-  description="Lambda表达式，Optional，Stream流"
-  logo="/blog/icon/java.png"
-  type="full"
-  /> 
-:::
 
 
 
@@ -52,6 +40,18 @@
   title="[Linux]Linux安装清华源解决DNS访问不通的问题" 
   description="Linux安装清华源解决DNS访问不通的问题"
   logo="/blog/icon/linux.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2025-06-02
+<Linkcard 
+  url="/blog/docs/develop/2025/20250602_Python课后练习" 
+  title="[Python]Python课后练习" 
+  description="用Python语法解决具体的问题"
+  logo="/blog/icon/python.png"
   type="full"
   /> 
 :::
@@ -92,6 +92,57 @@
   type="full"
   /> 
 
+:::
+
+
+
+::: timeline 2025-05-03
+<Linkcard 
+  url="/blog/docs/develop/2025/20250503_爬取B站视频、评论和弹幕" 
+  title="[Python]爬取B站视频、评论和弹幕" 
+  description="爬取B站视频、评论和弹幕"
+  logo="/blog/icon/python.png"
+  type="full"
+  /> 
+
+:::
+
+
+
+::: timeline 2025-04-22
+<Linkcard 
+  url="/blog/docs/develop/2025/20250422_爬取腾讯TV视频" 
+  title="[Python]爬取腾讯TV视频" 
+  description="爬取腾讯视频首页的任意一个视频到本地"
+  logo="/blog/icon/python.png"
+  type="full"
+  /> 
+
+:::
+
+
+
+::: timeline 2025-04-15
+<Linkcard 
+  url="/blog/docs/develop/2025/20250415_爬取当当图书畅销榜" 
+  title="[Python]爬取当当图书畅销榜" 
+  description="爬取当当图书畅销榜的书名、作者等信息到CSV表格中"
+  logo="/blog/icon/python.png"
+  type="full"
+  /> 
+
+:::
+
+
+
+::: timeline 2025-04-09
+<Linkcard 
+  url="/blog/docs/develop/2025/20250409_爬取雪球沪A成交额信息" 
+  title="[Python]爬取雪球沪A成交额信息" 
+  description="爬取雪球沪A成交额信息到CVS表格中，并将数据在图表中展示"
+  logo="/blog/icon/python.png"
+  type="full"
+  /> 
 :::
 
 
