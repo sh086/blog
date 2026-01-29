@@ -10,6 +10,18 @@
 
 
 
+::: timeline 2026-01-29
+<Linkcard 
+  url="/blog/docs/develop/2026/20260129_迁移代码至CNB部署" 
+  title="[DevOps]迁移代码至CNB部署" 
+  description="迁移代码至CNB，并配置自动化镜像生成流水线"
+  logo="https://cnb.cool/images/favicon.png"
+  type="full"
+  /> 
+:::
+
+
+
 ::: timeline 2025-10-23
 <Linkcard 
   url="/blog/docs/develop/2025/20251023_SpringBoot动态化开启定时任务" 
