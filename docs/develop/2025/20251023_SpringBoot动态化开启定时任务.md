@@ -8,9 +8,9 @@
 
 
 
-## 快速开始
+## 一、配置说明
 
-### 设置启用条件
+### 1、设置启用条件类
 
 ​	　首先，需要将启动类上面的 `@EnableScheduling` 注解需要去掉。
 
@@ -52,7 +52,7 @@ public class ScheduledCondition implements Condition {
 
 
 
-### ScheduleConfig
+### 2、配置ScheduleConfig
 
 ​	　SpringBoot中`@Scheduled`注解，是被一个叫做 `ScheduledAnnotationBeanPostProcessor` 的类所拦截的，所以，我们可以通过条件注解`@Conditional`来判断`ScheduledCondition`条件是否成立，来决定是否创建这个 `bean`，如果没有这个 `bean`，`@Scheduled` 就不会被拦截，那么定时任务肯定不会执行了。
 
@@ -76,9 +76,15 @@ public class ScheduleConfig {
 
 
 
-## 测试运行
+## 二、测试运行
 
-### @Scheduled实现
+​	　启动项目的时候，可以通过设定`enable.scheduled`的值，实现对实例中定时任务的开启和关闭进行动态控制，其中，`true`表示启用，`false`表示不启用。
+
+```shell
+docker run -d  -e JAVA_OPTS='-Denable.scheduled=true' projectName
+```
+
+### 1、@Scheduled定时任务
 
 ​	　新建`@Scheduled`注解的定时任务，若该定时任务启用，则会在控制台上打印日志。
 
@@ -95,7 +101,7 @@ public class Task {
 
 
 
-### while循环实现
+### 2、while循环定时任务
 
 ​	　新建`while循环`实现的定时任务，若该定时任务启用，则会在控制台上打印日志。
 
@@ -133,11 +139,5 @@ public class whileTask implements Runnable, InitializingBean {
 		th.start();
 	}
 }
-```
-
-​	　启动项目的时候，可以通过设定`enable.scheduled`的值，实现对实例中定时任务的开启和关闭进行动态控制，其中，`true`表示启用，`false`表示不启用。
-
-```shell
-docker run -d  -e JAVA_OPTS='-Denable.scheduled=true' projectName
 ```
 
