@@ -195,6 +195,7 @@ function onImageError() {
 
 /* logo图片 */
 .logo img {
+    height: 80px;
     width: 80px;
     object-fit: contain;
     /* 鼠标放到图片上展示手形 */
