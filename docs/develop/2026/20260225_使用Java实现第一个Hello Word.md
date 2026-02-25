@@ -1,5 +1,7 @@
 # 使用Java实现Hello Word
 
+![image-20260226000154173](images/image-20260226000154173.png)
+
 ## 一、开发环境
 
 ### JDK
@@ -107,7 +109,7 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 **2、IDEA设置全局MAVEN设置**
 
-<Img src="https://github.com/sh086/picx-images-hosting/raw/master/20260225/image-20260225230834722.3uvdl5ptkp.webp"/>
+<Img src="https://github.com/sh086/picx-images-hosting/raw/master/20260225/image.1e9569q6ft.webp"/>
 
 
 
