@@ -1,34 +1,4 @@
 
-/**
- * 指南左侧栏
- */
-const index =  [
-  {
-    text: '指南',
-    collapsed: false,
-    items: [
-      { text: '简介', link: '/docs/guide/'},
-      { text: '快速开始', link: '/docs/guide/startup/'},
-      { text: '面试宝典', link: '/docs/guide/interview/'},
-    ]
-  },
-  {
-    text: '专项',
-    collapsed: false, 
-    items: [
-      { text: '互联网全栈工程师', link: '/docs/guide/webapp/'},
-      { text: '大语言模型应用', link: '/docs/guide/chatgpt/'},
-    ]
-  },
-  {
-    text: '实践',
-    collapsed: false, 
-    items: [
-      { text: '练手项目', link: ''},
-    ]
-  },
-]
-
 
 /**
  * VitePress左侧栏
@@ -64,4 +34,4 @@ const vitepress =  [
   },
 ]
 
-export {index,vitepress}
+export {vitepress}

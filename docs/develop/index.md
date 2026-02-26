@@ -10,6 +10,30 @@
 
 
 
+::: timeline 2026-03-06
+<Linkcard 
+  url="/blog/docs/develop/2026/20260306_Junit单元测试" 
+  title="[Java]Junit单元测试" 
+  description="在Spring Boot中进行Junit单元测试"
+  logo="https://junit.org/assets/img/junit-diamond.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2026-02-25
+<Linkcard 
+  url="/blog/docs/develop/2026/20260225_使用Java实现第一个Hello Word" 
+  title="[Java]使用Java实现Hello Word" 
+  description="安装JDK、Maven环境，并通过IntelliJ IDEA实现Hello Word"
+  logo="/blog/icon/java.png"
+  type="full"
+  /> 
+:::
+
+
+
 ::: timeline 2026-01-29
 <Linkcard 
   url="/blog/docs/develop/2026/20260129_迁移代码至CNB部署" 
@@ -73,7 +97,7 @@
 ::: timeline 2025-05-30
 <Linkcard 
   url="/blog/docs/develop/2025/20250530_分布式任务调度平台XXL-JOB" 
-  title="[Java]分布式任务调度平台XXL-JOB" 
+  title="[DevOps]分布式任务调度平台XXL-JOB" 
   description="XXL-JOB是一个分布式任务调度平台，开发迅速、学习简单、轻量级、易扩展"
   logo="/blog/icon/xxljob.png"
   type="full"
@@ -85,7 +109,7 @@
 ::: timeline 2025-05-15
 <Linkcard 
   url="/blog/docs/develop/2025/20250515_使用AlibabaCanal同步数据库" 
-  title="[Java]使用AlibabaCanal同步数据库" 
+  title="[DevOps]使用AlibabaCanal同步数据库" 
   description="基于 MySQL 数据库增量日志解析，提供增量数据订阅和消费"
   logo="/blog/icon/alibaba.png"
   type="full"
