@@ -7,6 +7,7 @@ export default [
   //     { text: '面试指南', link: '/docs/guide/interview/' },
   //   ]
   // },
+  // {text: '指南', link: '/docs/guide/'},
   {text: '开发', link: '/docs/develop/'},
   {text: '工作流', link: '/docs/workflow/'},
   {text: '量化', link: '/docs/quant/'},

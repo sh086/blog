@@ -1,7 +1,5 @@
 # 使用Java实现Hello Word
 
-![image-20260226000154173](images/image-20260226000154173.png)
-
 ## 一、开发环境
 
 ### JDK
@@ -10,9 +8,11 @@
 
 <Img src="https://github.com/sh086/picx-images-hosting/raw/master/20260225/image-20260225201403116.8z72a9lrlw.png"/>
 
-​	　然后，新建`JAVA_HOME`环境变量，并配置`%JAVA_HOME%\bin`至`Path`变量值，以便在任意位置都可以使用`java`、`javac`等命令。
+​	　然后，新建`JAVA_HOME`环境变量。
 
 <Img src="https://github.com/sh086/picx-images-hosting/raw/master/20260225/image-20260225202806314.64ee4h7hnq.webp"/>
+
+​	　接着，配置`%JAVA_HOME%\bin`至`Path`变量值，这样就可以在任意位置都使用`java`、`javac`等命令了。
 
 <Img src="https://github.com/sh086/picx-images-hosting/raw/master/20260225/image-20260225203031475.5trkbbsosh.webp"/>
 
@@ -127,7 +127,7 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 <Img src="https://github.com/sh086/picx-images-hosting/raw/master/20260225/image-20260225232817037.3ns5pq4g5n.webp"/>
 
-​	　项目创建完成后，还需刷新`maven`以下载项目所需依赖。等依赖都下载完成后，即可启动项目，若项目正常启动，则表明全部配置成功。
+​	　项目创建完成后，还需刷新`maven`以下载项目所需依赖。等依赖都下载完成后，即可启动项目。若项目正常启动，则表明全部配置成功。
 
 ### 编写Hello Word
 
