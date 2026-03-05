@@ -45,7 +45,7 @@
 <Linkcard 
   url="3" 
   title="SpringAI" 
-  logo="https://spring.io/img/projects/spring-ai.svg"
+  logo="/blog/icon/springai.png"
   type="normal"
   /> 
 
