@@ -18,6 +18,8 @@
         v-for="video in paginatedVideos" 
         :key="video.id" 
         :href="video.link" 
+        target="_blank"
+        rel="noopener noreferrer"
         class="video-card"
       >
         <div class="cover-wrapper">
@@ -55,6 +57,7 @@
 
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue'
+import { useRoute } from 'vitepress'
 
 interface Video {
   id: number
@@ -69,10 +72,37 @@ const props = defineProps<{
   videos: Video[]
 }>()
 
+const route = useRoute()
 const categories = ['精选', '电影', '电视剧', '综艺', '纪录片', '游戏', '动漫', '搞笑', '知识', 'Vlog', '美剧', '日剧']
-const currentCategory = ref('精选')
+
+// 从URL参数获取分类，默认为精选（仅在浏览器中）
+const getInitialCategory = () => {
+  if (typeof window !== 'undefined' && window.location.search) {
+    const params = new URLSearchParams(window.location.search)
+    const cat = params.get('cat')
+    if (cat && categories.includes(cat)) {
+      return cat
+    }
+  }
+  return '精选'
+}
+const currentCategory = ref(getInitialCategory())
 const currentPage = ref(1)
 const perPage = 12 // 6行 * 2列 = 12个
+
+// 监听分类变化，更新URL
+watch(currentCategory, (newCat) => {
+  currentPage.value = 1
+  if (typeof window !== 'undefined') {
+    const url = new URL(window.location.href)
+    if (newCat === '精选') {
+      url.searchParams.delete('cat')
+    } else {
+      url.searchParams.set('cat', newCat)
+    }
+    window.history.replaceState({}, '', url.toString())
+  }
+})
 
 // 切换分类时重置页码
 watch(currentCategory, () => {
