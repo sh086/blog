@@ -10,8 +10,8 @@ hero:
       text: 指南
       link: ./docs/guide/
     - theme: alt
-      text: 在线视频
-      link: ./resource.md
+      text: 收藏视频
+      link: ./docs/more/video
   image:
       src: /logo.svg
       alt: VitePress

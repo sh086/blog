@@ -6,9 +6,11 @@ import DefaultTheme from 'vitepress/theme'
 // 引入自定义组件
 import Linkcard from "./components/Linkcard.vue"
 import Xgplayer from "./components/Xgplayer.vue"
+import XgplayerList from "./components/XgplayerList.vue"
 import Layout from './components/Layout.vue'
 import ArticleMetadata from "./components/ArticleMetadata.vue"
 import Img from './components/Img.vue'
+import VideoWall from './page/VideoWall.vue'
 
 // 图片放大插件
 import { onMounted, watch, nextTick } from "vue";
@@ -35,7 +37,9 @@ export default {
     app.component('Sandbox', Sandbox);
     app.component('Linkcard', Linkcard)
     app.component("Xgplayer", Xgplayer);
+    app.component("XgplayerList", XgplayerList);
     app.component("ArticleMetadata", ArticleMetadata);
+    app.component("VideoWall", VideoWall);
 
     // 切换路由进度条
     if (inBrowser) {
