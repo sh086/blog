@@ -18,9 +18,8 @@
   .sidebar-recommend {
     background: #ffffff;
     border-radius: 0.75rem;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
   }
   
   .recommend-header {
@@ -44,7 +43,7 @@
   }
   
   .article-item {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     transition: transform 0.2s ease;
   }
   

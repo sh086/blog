@@ -7,10 +7,10 @@ import DefaultTheme from 'vitepress/theme'
 import Linkcard from "./components/Linkcard.vue"
 import Xgplayer from "./components/Xgplayer.vue"
 import XgplayerList from "./components/XgplayerList.vue"
+import VideoList from "./components/VideoList.vue"
 import Layout from './components/Layout.vue'
 import ArticleMetadata from "./components/ArticleMetadata.vue"
 import Img from './components/Img.vue'
-import VideoWall from './page/VideoWall.vue'
 
 // 图片放大插件
 import { onMounted, watch, nextTick } from "vue";
@@ -38,8 +38,8 @@ export default {
     app.component('Linkcard', Linkcard)
     app.component("Xgplayer", Xgplayer);
     app.component("XgplayerList", XgplayerList);
+    app.component("VideoList", VideoList);
     app.component("ArticleMetadata", ArticleMetadata);
-    app.component("VideoWall", VideoWall);
 
     // 切换路由进度条
     if (inBrowser) {
@@ -69,7 +69,7 @@ export default {
       // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
       // mediumZoom(".main img", { background: "var(--vp-c-bg)" }); 
       // 使用 :not([alt="logo"]) 排除 alt="logo" 的图片
-      mediumZoom(".main img:not([alt='logo'])", { background: "var(--vp-c-bg)" });
+      mediumZoom(".main img:not([alt='logo']):not([data-no-zoom])", { background: "var(--vp-c-bg)" });
     };
     onMounted(() => {
       initZoom();

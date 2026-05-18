@@ -33,21 +33,3 @@
 
 
 
-<Linkcard 
-  url="2" 
-  title="SpringCloud" 
-  logo="/blog/icon/springcloud.png"
-  type="normal"
-  /> 
-
-
-
-<Linkcard 
-  url="3" 
-  title="SpringAI" 
-  logo="https://spring.io/img/projects/spring-ai.svg"
-  type="normal"
-  /> 
-
-
-
