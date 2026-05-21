@@ -1,10 +1,39 @@
-# 观影记录
+# 时间线
 
 ------
 
+::: timeline 2026年05月
+
+<VideoList :videos="[
+  { 
+    url: 'https://www.69shuba.com/book/35582.htm', 
+    poster: 'https://cdn.cdnshu.com/files/article/image/35/35582/35582s.jpg', 
+    title: '开局奖励一亿条命'
+  },
+  { 
+    url: 'https://img3.doubanio.com/view/photo/m/public/p2891485433.webp', 
+    poster: 'https://img9.doubanio.com/view/photo/m/public/p2173933285.webp', 
+    title: '吐槽新三国-吃蛋挞的折棒'
+  },
+]" />
+
+:::
 
 
-::: timeline 2026-01-01
+::: timeline 2025年11月
+
+<VideoList :videos="[
+  { 
+    url: 'https://www.bilibili.com/bangumi/media/md28347127', 
+    poster: 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2882772634.webp', 
+    title: '阿凡达：水之道(2022)'
+  },
+]" />
+
+:::
+
+------
+
 <VideoList :videos="[
   { 
     url: 'https://www.movieffm.net/movies/the-battleship-island/', 
@@ -32,8 +61,3 @@
     title: '善意的竞争'
   },
 ]" />
-
-:::
-
-
-

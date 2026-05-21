@@ -8,6 +8,7 @@ import Linkcard from "./components/Linkcard.vue"
 import Xgplayer from "./components/Xgplayer.vue"
 import XgplayerList from "./components/XgplayerList.vue"
 import VideoList from "./components/VideoList.vue"
+import Follow from "./components/Follow.vue"
 import Layout from './components/Layout.vue'
 import ArticleMetadata from "./components/ArticleMetadata.vue"
 import Img from './components/Img.vue'
@@ -39,6 +40,7 @@ export default {
     app.component("Xgplayer", Xgplayer);
     app.component("XgplayerList", XgplayerList);
     app.component("VideoList", VideoList);
+    app.component("Follow", Follow);
     app.component("ArticleMetadata", ArticleMetadata);
 
     // 切换路由进度条

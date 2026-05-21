@@ -1,5 +1,5 @@
 import  {vitepress} from './sidebar/guide.js'
-import  {more,docs} from './sidebar/more.js'
+import  {more} from './sidebar/more.js'
 
 export default {
 
@@ -8,6 +8,5 @@ export default {
 
   // 更多
   '/docs/more/history/':more,
-  '/docs/more/docs/':docs,
 
 }

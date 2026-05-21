@@ -53,6 +53,10 @@ function onImageError() {
         </a>
     </div>
 
+    <div v-if="props.type === 'small'">
+       
+    </div>
+
     <div v-if="props.type === 'video'" style="margin-top: 24px ;width: 210px; height: 140px;"class="linkcard">
         <a :href="props.url" >
             <div class="logo" style="width: 200px; height: 100px;">

@@ -6,9 +6,8 @@ export default [
   {
     text: '更多',
     items: [
-      { text: '观影记录', link: '/docs/more/history/' },
-      { text: '文档与图书', link: '/docs/more/docs' },
-      { text: '在线工具箱', link: '/docs/more/tools' },
+      { text: '我的动态', link: '/docs/more/history/' },
+      { text: '在线工具箱', link: '/docs/more/tools/' },
     ]
   },
 ] 
