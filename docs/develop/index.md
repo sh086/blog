@@ -12,6 +12,18 @@
 
 ::: timeline 2026-02-25
 <Linkcard 
+  url="/blog/docs/develop/2026/20260525_2025版pink老师最新AI+前端入门教程" 
+  title="[Web]20260525_2025版pink老师最新AI+前端入门教程" 
+  description="零基础必看，采用AI工具讲解html5、css3、flex布局、响应式、移动端页面等"
+  logo="/blog/icon/heima.png"
+  type="full"
+  /> 
+:::
+
+
+
+::: timeline 2026-02-25
+<Linkcard 
   url="/blog/docs/develop/2026/20260225_使用Java实现第一个Hello Word" 
   title="[Java]使用Java实现Hello Word" 
   description="安装JDK、Maven环境，并通过IntelliJ IDEA实现Hello Word"

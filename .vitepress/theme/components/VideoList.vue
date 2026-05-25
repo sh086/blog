@@ -8,6 +8,7 @@
     >
       <a :href="item.url" :target="item.target || '_blank'" class="video-cover" :class="{ 'video-cover-horizontal': item.orientation === 'horizontal' }">
         <img :src="item.poster" :alt="item.title" loading="lazy" data-no-zoom />
+        <span v-if="item.type" class="type-tag">{{ item.type }}</span>
       </a>
       <p v-if="item.title" class="video-title">{{ item.title }}</p>
     </div>
@@ -19,6 +20,7 @@
     url: string
     poster: string
     title?: string
+    type?: string // 左上角标签
     orientation?: 'horizontal' | 'vertical' // horizontal: 横屏(16:9), vertical: 竖屏(9:16)，默认竖屏
     target?: '_blank' | '_self' | '_parent' | '_top'
   }
@@ -56,6 +58,7 @@
   aspect-ratio: 1 / 1.48;
   background: #000;
   overflow: hidden;
+  position: relative;
 }
 
 .video-cover-horizontal {
@@ -69,6 +72,18 @@
   object-position: center;
   display: block;
   cursor: pointer;
+}
+
+.type-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  z-index: 1;
 }
 
 .video-title {
