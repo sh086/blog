@@ -6,6 +6,12 @@
 
 <VideoList :videos="[
   { 
+    url: 'https://www.bilibili.com/bangumi/play/ss123989', 
+    poster: 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2927572599.webp', 
+    type: '电影',
+    title: '得闲谨制'
+  },
+  { 
     url: 'https://www.69shuba.com/book/35582.htm', 
     poster: 'https://cdn.cdnshu.com/files/article/image/35/35582/35582s.jpg', 
     type: '小说',

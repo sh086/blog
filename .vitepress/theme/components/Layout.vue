@@ -52,7 +52,7 @@ watch(isDark, (dark) => {
     </template>
 
     <template #aside-top>
-      <div v-if="page.filePath.includes('docs/develop/index.md')">
+      <div v-if="page.filePath.includes('docs/workflow/index.md')">
         <DevelopAsidePage></DevelopAsidePage>
       </div>
     </template>
