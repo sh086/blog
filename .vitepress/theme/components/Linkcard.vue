@@ -53,10 +53,6 @@ function onImageError() {
         </a>
     </div>
 
-    <div v-if="props.type === 'small'">
-       
-    </div>
-
     <div v-if="props.type === 'video'" style="margin-top: 24px ;width: 210px; height: 140px;"class="linkcard">
         <a :href="props.url" >
             <div class="logo" style="width: 200px; height: 100px;">
@@ -147,12 +143,13 @@ function onImageError() {
     line-height: 25px;
     color: var(--vp-c-text-1);
     margin: 0;
+    margin-top: 3px;
     text-align: center;
     transition: color 0.5s;
     display: flex;
     align-items: center;
     justify-content: center; 
-    height: 100%; 
+    height: auto; 
     width: 100%;
 }
 
