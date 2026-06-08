@@ -10,30 +10,6 @@
 
 
 
-::: timeline 2026-05-25
-<Linkcard 
-  url="/blog/docs/workflow/2026/20260525_2025版pink老师最新AI+前端入门教程" 
-  title="[Web]20260525_2025版pink老师最新AI+前端入门教程" 
-  description="零基础必看，采用AI工具讲解html5、css3、flex布局、响应式、移动端页面等"
-  logo="/blog/icon/heima.png"
-  type="full"
-  /> 
-:::
-
-
-
-::: timeline 2026-06-01
-<Linkcard 
-  url="/blog/docs/workflow/2026/20260601_自学剪映专业版全套教程" 
-  title="[自媒体]自学剪映专业版全套教程" 
-  description="2026新手入门零基础剪映，逼自己一周学完，从零基础小白到视频剪辑大神"
-  logo="/blog/icon/jianying.png"
-  type="full"
-  /> 
-:::
-
-
-
 ::: timeline 2026-05-30
 <Linkcard 
   url="/blog/docs/workflow/2026/20260530_海绵宝宝经济科普短视频教学" 
