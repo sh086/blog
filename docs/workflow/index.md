@@ -10,9 +10,9 @@
 
 
 
-::: timeline 2026-05-30
+::: timeline 2026-06-08
 <Linkcard 
-  url="/blog/docs/workflow/2026/20260530_海绵宝宝经济科普短视频教学" 
+  url="/blog/docs/workflow/2026/20260608_海绵宝宝经济科普短视频教学" 
   title="[自媒体]海绵宝宝经济科普短视频教学" 
   description="零基础使用剪影剪辑海绵宝宝经济科普短视频"
   logo="/blog/img/haimain.png"
