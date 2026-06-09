@@ -1,0 +1,90 @@
+
+使用Apache POI操作MS文档
+使用Apache POI操作MS文档，如Excel、Word、PPT等
+
+Hutool工具类
+Hutool工具类在日期、转换、HTTP请求等场景下的应用
+
+史上最全Java工具类
+如guava、hutool、Apache以及自行封装的一些类库
+去除对象中所有非空属性的空格
+
+JDK8语法新特性
+介绍JDK8语法新特性，包括Lambda表达式、函数式接口、Steam API等新特性
+
+对象属性变更记录日志
+
+Java反射与注解
+
+JSON序列胡与反序列化
+JSON字符串与对象属性名不匹配
+
+Mybatis
+	MyBatisPlus代码生成器 - 自动化生成Mybatis配置
+	MyBatisPlus拓展特性 - 数据加密与解密
+	Mybatis拦截器实战
+
+统一异常管理
+AOP日志切面
+Java单元测试
+启用定时任务与多线程
+参数合法性校验
+	
+	
+
+20260226_钉钉机器人消息推送
+
+Alibaba Cancel解决MySql与Redis数据一致性问题
+
+# 项目管理
+
+
+
+## 开发
+
+### API文档
+
+
+
+### 单元测试
+
+
+
+### 统一异常
+
+
+
+### HTTP日志
+
+
+
+## 部署
+
+### Jenkins
+
+### CI/DI
+
+
+
+## 监控
+
+
+
+
+# 常用工具类
+
+
+
+## 经典工具包
+
+
+
+## 自定义工具类
+
+
+
+## 第三方工具
+
+
+
+

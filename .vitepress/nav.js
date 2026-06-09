@@ -1,7 +1,7 @@
 export default [
   {text: '指南', link: '/docs/guide/'},
-  {text: '开发', link: '/docs/develop/'},
   {text: '量化', link: '/docs/quant/'},
+  {text: '工作流', link: '/docs/workflow/'},
   // {text: '创业', link: '/docs/project/'},
   {
     text: '更多',
