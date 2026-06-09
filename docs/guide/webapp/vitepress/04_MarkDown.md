@@ -425,7 +425,7 @@ npm i pnpm -g
 ```
 
 ```md:img [cmd 控制台]
-![](/blog/icon/vitepress.png)
+<Img src ='https://github.com/sh086/picx-images-hosting/raw/master/image-20260607210058957.6m4jvyyw0x.webp'/>
 ```
 :::
 
